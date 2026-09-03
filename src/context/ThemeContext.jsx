@@ -5,8 +5,8 @@ import { injectThemeVariables } from '../utils/themeInjector';
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [activeBusinessKey, setActiveBusinessKey] = useState('dental-clinic');
-  const [currentBusinessConfig, setCurrentBusinessConfig] = useState(businessPresets['dental-clinic']);
+  const [activeBusinessKey, setActiveBusinessKey] = useState('realEstate');
+  const [currentBusinessConfig, setCurrentBusinessConfig] = useState(businessPresets.realEstate || businessPresets['realEstate']);
 
   // Apply CSS custom variables whenever business config or theme changes
   useEffect(() => {
