@@ -57,7 +57,7 @@ export const realEstateConfig = {
   logo: {
     image: "/images/realestate/logo.jpg",
     icon: "Building",
-    text: "FLATS & BEYOND",
+    text: "FLATS n BEYOND",
     subtext: "WHERE DREAMS FIND AN ADDRESS"
   },
 

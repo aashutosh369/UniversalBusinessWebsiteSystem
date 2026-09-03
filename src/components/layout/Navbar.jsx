@@ -71,11 +71,11 @@ export const Navbar = () => {
             className="flex items-center gap-3 group shrink-0"
           >
             {businessConfig.logo?.image ? (
-              <div className="relative overflow-hidden rounded-xl bg-[var(--color-surface-card)] p-1 border border-[var(--color-border)] shadow-md group-hover:scale-105 transition-all duration-300">
+              <div className="relative overflow-hidden rounded-full bg-[var(--color-surface-card)] p-0.5 border border-amber-500/40 shadow-md group-hover:scale-105 transition-all duration-300 shrink-0">
                 <img
                   src={businessConfig.logo.image}
                   alt={businessConfig.name}
-                  className="h-10 sm:h-11 w-auto object-contain rounded-lg"
+                  className="h-10 sm:h-11 w-10 sm:w-11 object-cover rounded-full"
                 />
               </div>
             ) : (

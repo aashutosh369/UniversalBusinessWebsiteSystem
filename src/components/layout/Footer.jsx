@@ -17,11 +17,13 @@ export const Footer = () => {
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
               {businessConfig.logo.image ? (
-                <img
-                  src={businessConfig.logo.image}
-                  alt={businessConfig.name}
-                  className="h-10 sm:h-12 w-auto object-contain rounded-lg shadow-md"
-                />
+                <div className="relative overflow-hidden rounded-full bg-slate-900 p-0.5 border border-amber-500/40 shadow-md shrink-0">
+                  <img
+                    src={businessConfig.logo.image}
+                    alt={businessConfig.name}
+                    className="h-10 sm:h-12 w-10 sm:w-12 object-cover rounded-full"
+                  />
+                </div>
               ) : (
                 <div className="w-10 h-10 rounded-xl bg-[var(--color-primary)] text-white flex items-center justify-center shadow-lg">
                   <DynamicIcon name={businessConfig.logo.icon} className="w-5 h-5" />
