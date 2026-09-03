@@ -113,13 +113,13 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="lg:col-span-5 relative"
           >
-            <div className="relative rounded-[var(--radius-card,1.75rem)] overflow-hidden shadow-2xl border border-[var(--color-border,#e2e8f0)]">
+            <div className="relative rounded-[var(--radius-card,1.75rem)] overflow-hidden shadow-2xl border border-[var(--color-border,#e2e8f0)] group cursor-pointer">
               <ImageFallback
                 src={hero.image}
                 alt={businessConfig.name}
-                className="w-full h-[450px] sm:h-[520px] object-cover object-center"
+                className="w-full h-[450px] sm:h-[520px] object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
             </div>
 
             {/* Floating Glassmorphism Highlight Card */}

@@ -85,7 +85,7 @@ export const Navbar = () => {
             )}
             
             <div className="flex flex-col">
-              <span className="font-heading font-black text-base sm:text-lg tracking-wider text-[var(--color-text-primary)] uppercase leading-none group-hover:text-[var(--color-primary)] transition-colors">
+              <span className="font-heading font-black text-base sm:text-lg tracking-wider text-[var(--color-text-primary)] leading-none group-hover:text-[var(--color-primary)] transition-colors">
                 {businessConfig.logo?.text || businessConfig.name}
               </span>
               <span className="text-[9px] sm:text-[10px] font-extrabold tracking-widest text-[var(--color-primary)] uppercase mt-1">
