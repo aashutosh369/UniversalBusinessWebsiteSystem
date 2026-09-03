@@ -17,7 +17,7 @@ export const PropertiesSection = ({ config }) => {
   const properties = sectionData.items;
 
   return (
-    <section className="py-8 bg-[var(--color-surface-muted)] border-t border-[var(--color-border,#e2e8f0)]">
+    <section id={config?.id || "featured"} className="py-8 bg-[var(--color-surface-muted)] border-t border-[var(--color-border,#e2e8f0)]">
       <Container>
         <SectionHeading
           badge={sectionData.badge || "Featured Estates"}

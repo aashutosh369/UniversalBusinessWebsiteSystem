@@ -13,7 +13,7 @@ export const StepsSection = ({ config }) => {
   if (!stepsConfig || !stepsConfig.steps) return null;
 
   return (
-    <section id="steps" className="py-8 bg-[var(--color-surface)] text-[var(--color-text-primary)] transition-colors duration-500">
+    <section id={config?.id || "steps"} className="py-8 bg-[var(--color-surface)] text-[var(--color-text-primary)] transition-colors duration-500">
       <Container>
         <SectionHeading
           badge={stepsConfig.badge || "Process"}

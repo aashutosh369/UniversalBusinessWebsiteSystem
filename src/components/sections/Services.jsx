@@ -29,7 +29,7 @@ export const Services = ({ config }) => {
     : services.filter(s => s.category === activeCategory);
 
   return (
-    <section id="services" className="py-8 bg-[var(--color-surface-muted)] text-[var(--color-text-primary)] transition-colors duration-500">
+    <section id={config?.id || "services"} className="py-8 bg-[var(--color-surface-muted)] text-[var(--color-text-primary)] transition-colors duration-500">
       <Container>
         <SectionHeading
           badge={servicesConfig.badge || "Services Directory"}

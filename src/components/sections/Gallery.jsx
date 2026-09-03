@@ -7,10 +7,10 @@ import Modal from '../ui/Modal';
 import ImageFallback from '../ui/ImageFallback';
 import { Maximize2 } from 'lucide-react';
 
-export const Gallery = () => {
+export const Gallery = ({ config }) => {
   const { businessConfig } = useTheme();
-  const galleryConfig = businessConfig.galleryConfig;
-  const items = galleryConfig.items || [];
+  const galleryConfig = businessConfig[config?.dataKey || 'galleryConfig'] || businessConfig.galleryConfig;
+  const items = galleryConfig?.items || [];
 
   const [activeCategory, setActiveCategory] = useState('All');
   const [activeItem, setActiveItem] = useState(null);
@@ -24,7 +24,7 @@ export const Gallery = () => {
     : items.filter(i => i.category === activeCategory);
 
   return (
-    <section id="gallery" className="py-8 bg-[var(--color-surface-muted)] text-[var(--color-text-primary)] transition-colors duration-500">
+    <section id={config?.id || "gallery"} className="py-8 bg-[var(--color-surface-muted)] text-[var(--color-text-primary)] transition-colors duration-500">
       <Container>
         <SectionHeading
           badge={galleryConfig.badge || "Gallery"}

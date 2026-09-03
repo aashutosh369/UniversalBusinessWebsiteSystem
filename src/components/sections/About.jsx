@@ -7,14 +7,14 @@ import GlassCard from '../ui/GlassCard';
 import ImageFallback from '../ui/ImageFallback';
 import { CheckCircle2, Award } from 'lucide-react';
 
-export const About = () => {
+export const About = ({ config }) => {
   const { businessConfig } = useTheme();
   const { about } = businessConfig;
 
   if (!about) return null;
 
   return (
-    <section id="about" className="py-8 bg-[var(--color-surface)] text-[var(--color-text-primary)] transition-colors duration-500 overflow-hidden">
+    <section id={config?.id || "about"} className="py-8 bg-[var(--color-surface)] text-[var(--color-text-primary)] transition-colors duration-500 overflow-hidden">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           {/* Left Visual Image Stack */}

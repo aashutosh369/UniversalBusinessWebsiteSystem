@@ -13,7 +13,7 @@ export const Features = ({ config }) => {
   if (!featuresConfig || !featuresConfig.items) return null;
 
   return (
-    <section id="features" className="py-8 bg-[var(--color-surface)] text-[var(--color-text-primary)] transition-colors duration-500">
+    <section id={config?.id || "features"} className="py-8 bg-[var(--color-surface)] text-[var(--color-text-primary)] transition-colors duration-500">
       <Container>
         <SectionHeading
           badge="Why Choose Us"

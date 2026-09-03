@@ -12,7 +12,7 @@ export const CTA = ({ config }) => {
   if (!cta) return null;
 
   return (
-    <section className="py-10 bg-[var(--color-secondary)] text-white relative overflow-hidden transition-colors duration-500">
+    <section id={config?.id || "cta"} className="py-10 bg-[var(--color-secondary)] text-white relative overflow-hidden transition-colors duration-500">
       {/* Background Radial Glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[var(--color-primary)]/20 rounded-full blur-3xl pointer-events-none" />
 
