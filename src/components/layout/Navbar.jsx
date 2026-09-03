@@ -24,6 +24,31 @@ export const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Smooth Navigation Handler for Desktop & Mobile
+  const handleNavClick = (e, href) => {
+    if (href && href.startsWith('#')) {
+      e.preventDefault();
+      setMobileMenuOpen(false);
+      const targetId = href.replace('#', '');
+      const element = document.getElementById(targetId);
+      
+      if (element) {
+        setTimeout(() => {
+          const navbarOffset = 80;
+          const bodyTop = document.body.getBoundingClientRect().top;
+          const elementTop = element.getBoundingClientRect().top;
+          const elementPosition = elementTop - bodyTop;
+          const offsetPosition = elementPosition - navbarOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }, 100);
+      }
+    }
+  };
+
   // Desktop navigation items
   const desktopNavItems = siteConfig.navigation.filter(item =>
     ['Home', 'About Us', 'Properties', 'Why Us', 'Process', 'Contact'].includes(item.label)
@@ -40,7 +65,11 @@ export const Navbar = () => {
       <div className="w-full max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between gap-4">
           {/* Brand Logo & Name */}
-          <a href="#hero" className="flex items-center gap-3 group shrink-0">
+          <a
+            href="#hero"
+            onClick={(e) => handleNavClick(e, '#hero')}
+            className="flex items-center gap-3 group shrink-0"
+          >
             {businessConfig.logo?.image ? (
               <div className="relative overflow-hidden rounded-xl bg-[var(--color-surface-card)] p-1 border border-[var(--color-border)] shadow-md group-hover:scale-105 transition-all duration-300">
                 <img
@@ -65,13 +94,14 @@ export const Navbar = () => {
             </div>
           </a>
 
-          {/* Desktop Navigation Links — Spans Full Width Cleanly without Border/Div Box */}
+          {/* Desktop Navigation Links */}
           <nav className="hidden lg:flex items-center justify-center flex-1 mx-4 gap-6 xl:gap-8">
             {desktopNavItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm xl:text-base font-semibold tracking-wide text-[var(--color-text-primary)] hover:text-[var(--color-primary)] transition-colors py-1 relative group"
+                onClick={(e) => handleNavClick(e, item.href)}
+                className="text-sm xl:text-base font-semibold tracking-wide text-[var(--color-text-primary)] hover:text-[var(--color-primary)] transition-colors py-1 relative group cursor-pointer"
               >
                 {item.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--color-primary)] rounded-full transition-all duration-300 group-hover:w-full" />
@@ -84,7 +114,7 @@ export const Navbar = () => {
             {/* Dark/Light Theme Toggle Button */}
             <button
               onClick={toggleDarkMode}
-              className="p-2.5 rounded-full bg-[var(--color-surface-card)] border border-[var(--color-border)] text-[var(--color-primary)] hover:scale-105 active:scale-95 transition-all duration-300 shadow-md"
+              className="p-2.5 rounded-full bg-[var(--color-surface-card)] border border-[var(--color-border)] text-[var(--color-primary)] hover:scale-105 active:scale-95 transition-all duration-300 shadow-md cursor-pointer"
               title={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
               aria-label="Toggle Theme Mode"
             >
@@ -107,7 +137,8 @@ export const Navbar = () => {
             {/* Book Site Visit CTA */}
             <a
               href="#contact"
-              className="flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wide bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-slate-950 hover:brightness-110 shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all duration-300 transform active:scale-95"
+              onClick={(e) => handleNavClick(e, '#contact')}
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wide bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-slate-950 hover:brightness-110 shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all duration-300 transform active:scale-95 cursor-pointer"
             >
               <Calendar className="w-4 h-4" />
               <span>Book Site Visit</span>
@@ -152,8 +183,8 @@ export const Navbar = () => {
                   <a
                     key={item.label}
                     href={item.href}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="text-sm font-semibold text-[var(--color-text-primary)] hover:text-[var(--color-primary)] p-3 rounded-xl bg-[var(--color-surface-card)] border border-[var(--color-border)] transition-all"
+                    onClick={(e) => handleNavClick(e, item.href)}
+                    className="text-sm font-semibold text-[var(--color-text-primary)] hover:text-[var(--color-primary)] active:text-[var(--color-primary)] p-3 rounded-xl bg-[var(--color-surface-card)] border border-[var(--color-border)] transition-all cursor-pointer text-center block"
                   >
                     {item.label}
                   </a>
@@ -173,8 +204,8 @@ export const Navbar = () => {
 
                 <a
                   href="#contact"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-sm font-extrabold uppercase tracking-wide bg-gradient-to-r from-amber-500 to-amber-400 text-slate-950 shadow-lg shadow-amber-500/30"
+                  onClick={(e) => handleNavClick(e, '#contact')}
+                  className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-sm font-extrabold uppercase tracking-wide bg-gradient-to-r from-amber-500 to-amber-400 text-slate-950 shadow-lg shadow-amber-500/30 cursor-pointer"
                 >
                   <Calendar className="w-4 h-4" />
                   <span>Book Site Visit</span>
