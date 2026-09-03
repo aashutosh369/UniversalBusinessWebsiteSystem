@@ -17,7 +17,7 @@ export const realEstateConfig = {
       text: { primary: '#f5f2eb', secondary: '#a8a297' },
       border: 'rgba(197, 160, 89, 0.22)'
     },
-    typography: { heading: "'Playfair Display', serif", body: "'Inter', sans-serif" },
+    typography: { heading: "'Cinzel', serif", body: "'Plus Jakarta Sans', sans-serif" },
     radius: { brand: '0.5rem', card: '0.85rem', btn: '0.5rem' },
     glass: { blur: '16px', border: 'rgba(197, 160, 89, 0.22)' }
   },
@@ -33,7 +33,7 @@ export const realEstateConfig = {
       text: { primary: '#f5f2eb', secondary: '#a8a297' },
       border: 'rgba(197, 160, 89, 0.22)'
     },
-    typography: { heading: "'Playfair Display', serif", body: "'Inter', sans-serif" },
+    typography: { heading: "'Cinzel', serif", body: "'Plus Jakarta Sans', sans-serif" },
     radius: { brand: '0.5rem', card: '0.85rem', btn: '0.5rem' },
     glass: { blur: '16px', border: 'rgba(197, 160, 89, 0.22)' }
   },
@@ -49,7 +49,7 @@ export const realEstateConfig = {
       text: { primary: '#1e293b', secondary: '#475569' },
       border: 'rgba(197, 160, 89, 0.18)'
     },
-    typography: { heading: "'Playfair Display', serif", body: "'Inter', sans-serif" },
+    typography: { heading: "'Cinzel', serif", body: "'Plus Jakarta Sans', sans-serif" },
     radius: { brand: '0.5rem', card: '0.85rem', btn: '0.5rem' },
     glass: { blur: '16px', border: 'rgba(197, 160, 89, 0.18)' }
   },
@@ -90,7 +90,7 @@ export const realEstateConfig = {
     ctaPrimary: { text: "Explore Luxury Properties", href: "#featured", icon: "Search" },
     ctaSecondary: { text: "Book Private Site Visit", href: "#contact", icon: "Calendar" },
     image: "/images/realestate/hero.jpg",
-    highlights: ["Direct Founder Guidance: Tanuj Arora (+91 99117 86111)", "100% Verified Legal Titles & RERA Compliant", "End-to-End Home Loan & Deal Closure Support"],
+    highlights: ["Direct Advisory Guidance: Tanuj Arora (+91 99117 86111)", "100% Verified Legal Titles & RERA Compliant", "End-to-End Home Loan & Deal Closure Support"],
     searchEnabled: false,
     searchButtonText: "Find My Flat",
     searchFields: [
@@ -114,16 +114,16 @@ export const realEstateConfig = {
   },
 
   about: {
-    badge: "ABOUT FLATS & BEYOND",
-    title: "Your Premier Real Estate Advisory — Led by Tanuj Arora",
+    badge: "ABOUT FLATS n BEYOND",
+    title: "Premier Real Estate Advisory & Luxury Property Consultants",
     subtitle: "Where Dreams Find An Address.",
-    description: "Flats & Beyond is a premier real estate consultancy founded by Tanuj Arora with a singular mission: to help every homebuyer and investor discover their ideal property with zero stress, absolute transparency, and maximum value.\n\nWhether you are searching for an opulent 3 BHK family apartment, a signature penthouse, a modern builder floor, or high-yielding commercial space in Gurugram & Delhi NCR, Tanuj Arora and our team deliver personalized advisory from initial site visit to final key handover.",
+    description: "Flats n Beyond is a premier real estate consultancy built on absolute transparency, deep NCR market foresight, and buyer-first integrity.\n\nWhether you are seeking a luxury 3 or 4 BHK apartment, a private penthouse, an independent builder floor, or a high-return commercial asset across Gurugram, Delhi NCR & Noida, our team delivers complete end-to-end guidance from initial private site visit to final key handover.",
     experienceYears: "10+",
     doctorsCount: "15+",
     proceduresDone: "500+",
     imageMain: "/images/realestate/about-main.jpg",
     imageSecondary: "/images/realestate/about-secondary.jpg",
-    featuresList: ["Personalized Advisory by Founder Tanuj Arora", "Direct Developer Deals & Zero Hidden Fees", "100% Legal Title & RERA Verification", "Free Luxury AC Cab for Site Visits"]
+    featuresList: ["Direct Advisory Guidance: Tanuj Arora (+91 99117 86111)", "Direct Developer Deals & Zero Hidden Fees", "100% Legal Title & RERA Verification", "Complimentary AC Cab for Site Visits"]
   },
 
   propertyTypesConfig: {
