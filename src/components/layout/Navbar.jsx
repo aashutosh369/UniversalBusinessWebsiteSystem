@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Phone, MessageSquare } from 'lucide-react';
+import { Menu, X, Phone, MessageSquare, Calendar, Sun, Moon } from 'lucide-react';
 import { useTheme } from '../../context/ThemeContext';
 import siteConfig from '../../config/siteConfig';
 import Container from '../ui/Container';
@@ -8,7 +8,7 @@ import Button from '../ui/Button';
 import { DynamicIcon } from '../../utils/icons';
 
 export const Navbar = () => {
-  const { businessConfig } = useTheme();
+  const { businessConfig, isDarkMode, toggleDarkMode } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -24,134 +24,175 @@ export const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Desktop navigation items
+  const desktopNavItems = siteConfig.navigation.filter(item =>
+    ['Home', 'About Us', 'Properties', 'Why Us', 'Process', 'Contact'].includes(item.label)
+  );
+
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-[var(--color-surface-glass)] backdrop-blur-md shadow-md py-3 border-b border-[var(--color-border,#e2e8f0)]'
-          : 'bg-transparent py-5'
+          ? 'bg-[var(--color-surface-glass)] backdrop-blur-xl border-b border-[var(--color-border)] shadow-2xl py-3'
+          : 'bg-[var(--color-surface-glass)] backdrop-blur-lg border-b border-[var(--color-border)] py-4'
       }`}
     >
-      <Container>
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <a href="#hero" className="flex items-center gap-3 group">
-            {businessConfig.logo.image ? (
-              <img
-                src={businessConfig.logo.image}
-                alt={businessConfig.name}
-                className="h-10 sm:h-12 w-auto object-contain rounded-lg shadow-sm group-hover:scale-105 transition-transform duration-300"
-              />
+      <div className="w-full max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between gap-4">
+          {/* Brand Logo & Name */}
+          <a href="#hero" className="flex items-center gap-3 group shrink-0">
+            {businessConfig.logo?.image ? (
+              <div className="relative overflow-hidden rounded-xl bg-[var(--color-surface-card)] p-1 border border-[var(--color-border)] shadow-md group-hover:scale-105 transition-all duration-300">
+                <img
+                  src={businessConfig.logo.image}
+                  alt={businessConfig.name}
+                  className="h-10 sm:h-11 w-auto object-contain rounded-lg"
+                />
+              </div>
             ) : (
-              <div className="w-10 h-10 rounded-xl bg-[var(--color-primary)] text-white flex items-center justify-center shadow-md group-hover:scale-105 transition-transform duration-300">
-                <DynamicIcon name={businessConfig.logo.icon} className="w-5 h-5" />
+              <div className="w-10 h-10 rounded-xl bg-[var(--color-primary)] text-[var(--color-primary-fg,#0d0c0a)] font-bold flex items-center justify-center shadow-lg group-hover:scale-105 transition-transform duration-300">
+                <DynamicIcon name={businessConfig.logo?.icon || 'Building'} className="w-5 h-5" />
               </div>
             )}
-            <div>
-              <span className="block font-heading font-extrabold text-lg sm:text-xl tracking-tight text-[var(--color-text-primary)] leading-none">
-                {businessConfig.logo.text}
+            
+            <div className="flex flex-col">
+              <span className="font-heading font-black text-base sm:text-lg tracking-wider text-[var(--color-text-primary)] uppercase leading-none group-hover:text-[var(--color-primary)] transition-colors">
+                {businessConfig.logo?.text || businessConfig.name}
               </span>
-              <span className="block text-[10px] font-semibold tracking-widest text-[var(--color-primary)] uppercase mt-0.5">
-                {businessConfig.logo.subtext}
+              <span className="text-[9px] sm:text-[10px] font-extrabold tracking-widest text-[var(--color-primary)] uppercase mt-1">
+                {businessConfig.logo?.subtext || businessConfig.tagline}
               </span>
             </div>
           </a>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
-            {siteConfig.navigation.map((item) => (
+          {/* Desktop Navigation Links — Spans Full Width Cleanly without Border/Div Box */}
+          <nav className="hidden lg:flex items-center justify-center flex-1 mx-4 gap-6 xl:gap-8">
+            {desktopNavItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm font-medium text-[var(--color-text-primary)] hover:text-[var(--color-primary)] transition-colors"
+                className="text-sm xl:text-base font-semibold tracking-wide text-[var(--color-text-primary)] hover:text-[var(--color-primary)] transition-colors py-1 relative group"
               >
                 {item.label}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[var(--color-primary)] rounded-full transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
           </nav>
 
-          {/* Desktop Right CTA */}
-          <div className="hidden sm:flex items-center gap-4">
-            <a
-              href={`tel:${businessConfig.contact.phone.replace(/[^0-9+]/g, '')}`}
-              className="flex items-center gap-2 text-xs font-semibold text-[var(--color-text-primary)] hover:text-[var(--color-primary)]"
+          {/* Desktop Right CTA Bar */}
+          <div className="hidden md:flex items-center gap-3 shrink-0">
+            {/* Dark/Light Theme Toggle Button */}
+            <button
+              onClick={toggleDarkMode}
+              className="p-2.5 rounded-full bg-[var(--color-surface-card)] border border-[var(--color-border)] text-[var(--color-primary)] hover:scale-105 active:scale-95 transition-all duration-300 shadow-md"
+              title={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+              aria-label="Toggle Theme Mode"
             >
-              <span className="p-2 rounded-full bg-[var(--color-primary)]/10 text-[var(--color-primary)]">
-                <Phone className="w-3.5 h-3.5" />
-              </span>
-              <span className="hidden xl:inline">{businessConfig.contact.phone}</span>
-            </a>
+              {isDarkMode ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-[var(--color-text-primary)]" />}
+            </button>
 
-            <Button
-              variant="primary"
-              size="sm"
+            {/* Direct Phone Pill */}
+            {businessConfig.contact?.phone && (
+              <a
+                href={`tel:${businessConfig.contact.phone.replace(/[^0-9+]/g, '')}`}
+                className="hidden xl:flex items-center gap-2.5 px-3.5 py-2 rounded-full bg-[var(--color-surface-card)] border border-[var(--color-border)] text-xs font-semibold text-[var(--color-text-primary)] hover:border-[var(--color-primary)] hover:text-[var(--color-primary)] transition-all duration-300"
+              >
+                <span className="p-1.5 rounded-full bg-[var(--color-primary)]/20 text-[var(--color-primary)]">
+                  <Phone className="w-3.5 h-3.5" />
+                </span>
+                <span>{businessConfig.contact.phone}</span>
+              </a>
+            )}
+
+            {/* Book Site Visit CTA */}
+            <a
               href="#contact"
-              icon="Calendar"
+              className="flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-extrabold uppercase tracking-wide bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-slate-950 hover:brightness-110 shadow-lg shadow-amber-500/25 hover:shadow-amber-500/40 transition-all duration-300 transform active:scale-95"
             >
-              Book Now
-            </Button>
+              <Calendar className="w-4 h-4" />
+              <span>Book Site Visit</span>
+            </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-[var(--color-text-primary)] rounded-lg hover:bg-[var(--color-primary)]/10 transition-colors"
-            aria-label="Toggle Mobile Menu"
-          >
-            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-          </button>
-        </div>
-      </Container>
+          {/* Mobile Right Action Group */}
+          <div className="flex items-center gap-2 lg:hidden">
+            <button
+              onClick={toggleDarkMode}
+              className="p-2 rounded-xl bg-[var(--color-surface-card)] border border-[var(--color-border)] text-[var(--color-primary)] hover:opacity-80 transition-colors"
+              title={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+              aria-label="Toggle Theme Mode"
+            >
+              {isDarkMode ? <Sun className="w-5 h-5 text-amber-400" /> : <Moon className="w-5 h-5 text-[var(--color-text-primary)]" />}
+            </button>
 
-      {/* Mobile Drawer Navigation */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="p-2 text-[var(--color-text-primary)] rounded-xl bg-[var(--color-surface-card)] border border-[var(--color-border)] hover:opacity-80 transition-colors"
+              aria-label="Toggle Navigation Menu"
+            >
+              {mobileMenuOpen ? <X className="w-6 h-6 text-[var(--color-primary)]" /> : <Menu className="w-6 h-6 text-[var(--color-text-primary)]" />}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Drawer Menu */}
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
-            className="lg:hidden bg-[var(--color-surface-glass)] backdrop-blur-xl border-b border-[var(--color-border,#e2e8f0)] shadow-xl overflow-hidden"
+            transition={{ duration: 0.25 }}
+            className="lg:hidden bg-[var(--color-surface-glass)] backdrop-blur-2xl border-b border-[var(--color-border)] shadow-2xl overflow-hidden"
           >
-            <Container className="py-6 space-y-4">
-              <div className="flex flex-col space-y-3">
+            <div className="px-4 py-6 space-y-5">
+              <div className="grid grid-cols-2 gap-2">
                 {siteConfig.navigation.map((item) => (
                   <a
                     key={item.label}
                     href={item.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="text-base font-semibold text-[var(--color-text-primary)] hover:text-[var(--color-primary)] py-2 border-b border-[var(--color-border,#e2e8f0)]"
+                    className="text-sm font-semibold text-[var(--color-text-primary)] hover:text-[var(--color-primary)] p-3 rounded-xl bg-[var(--color-surface-card)] border border-[var(--color-border)] transition-all"
                   >
                     {item.label}
                   </a>
                 ))}
               </div>
 
-              <div className="pt-4 flex flex-col gap-3">
-                <Button
-                  variant="primary"
-                  size="md"
-                  href="#contact"
-                  icon="Calendar"
-                  className="w-full"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  Contact Now
-                </Button>
+              <div className="pt-2 flex flex-col gap-3 border-t border-[var(--color-border)]">
+                {businessConfig.contact?.phone && (
+                  <a
+                    href={`tel:${businessConfig.contact.phone.replace(/[^0-9+]/g, '')}`}
+                    className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-sm font-bold bg-[var(--color-surface-card)] border border-[var(--color-border)] text-[var(--color-primary)] hover:opacity-90 transition-colors"
+                  >
+                    <Phone className="w-4 h-4" />
+                    <span>Call Direct: {businessConfig.contact.phone}</span>
+                  </a>
+                )}
 
-                {businessConfig.contact.whatsapp && (
+                <a
+                  href="#contact"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-sm font-extrabold uppercase tracking-wide bg-gradient-to-r from-amber-500 to-amber-400 text-slate-950 shadow-lg shadow-amber-500/30"
+                >
+                  <Calendar className="w-4 h-4" />
+                  <span>Book Site Visit</span>
+                </a>
+
+                {businessConfig.contact?.whatsapp && (
                   <a
                     href={`https://wa.me/${businessConfig.contact.whatsapp}?text=${encodeURIComponent(businessConfig.contact.whatsappMessage || '')}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-700 transition-colors"
+                    className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-sm font-semibold bg-emerald-600 text-white hover:bg-emerald-700 transition-colors"
                   >
                     <MessageSquare className="w-4 h-4" />
-                    <span>Chat on WhatsApp</span>
+                    <span>Chat on WhatsApp (+91 99117 86111)</span>
                   </a>
                 )}
               </div>
-            </Container>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

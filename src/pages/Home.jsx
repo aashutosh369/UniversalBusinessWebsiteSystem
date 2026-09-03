@@ -9,7 +9,7 @@ import siteConfig from '../config/siteConfig';
 
 export const Home = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 selection:bg-[var(--color-primary)] selection:text-white pb-[70px] lg:pb-0">
+    <div className="min-h-screen flex flex-col bg-[var(--color-surface)] text-[var(--color-text-primary)] selection:bg-[var(--color-primary)] selection:text-white pb-[70px] lg:pb-0 transition-colors duration-500">
       <BookingModal />
       <MobileActionBar />
       {/* Navbar */}

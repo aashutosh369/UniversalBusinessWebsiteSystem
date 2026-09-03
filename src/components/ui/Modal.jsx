@@ -33,7 +33,7 @@ export const Modal = ({
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={onClose}
-            className="fixed inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity"
+            className="fixed inset-0 bg-black/80 backdrop-blur-md transition-opacity"
           />
 
           {/* Modal Box */}
@@ -42,16 +42,16 @@ export const Modal = ({
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
             transition={{ duration: 0.2 }}
-            className={`relative w-full ${maxWidth} bg-white dark:bg-slate-900 rounded-[var(--radius-card,1.5rem)] shadow-2xl border border-slate-200 dark:border-slate-800 z-10 overflow-hidden my-8`}
+            className={`relative w-full ${maxWidth} bg-[var(--color-surface-card)] text-[var(--color-text-primary)] rounded-[var(--radius-card,1.25rem)] shadow-2xl border border-[var(--color-border)] z-10 overflow-hidden my-8`}
           >
             {/* Header */}
-            <div className="flex items-center justify-between px-6 py-4 border-b border-slate-100 dark:border-slate-800">
-              <h3 className="text-lg font-bold font-heading text-slate-900 dark:text-white">
+            <div className="flex items-center justify-between px-6 py-4 border-b border-[var(--color-border)]">
+              <h3 className="text-lg font-bold font-heading text-[var(--color-text-primary)]">
                 {title}
               </h3>
               <button
                 onClick={onClose}
-                className="p-2 text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+                className="p-2 text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] rounded-full hover:bg-[var(--color-surface-muted)] transition-colors"
                 aria-label="Close Modal"
               >
                 <X className="w-5 h-5" />

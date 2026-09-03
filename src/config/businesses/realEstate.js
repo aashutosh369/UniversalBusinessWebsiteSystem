@@ -7,18 +7,51 @@ export const realEstateConfig = {
   badge: "Premier Real Estate & Property Advisory",
 
   theme: {
-    id: "theme-realestate",
+    id: "theme-realestate-dark",
+    isDark: true,
     colors: {
-      primary: { DEFAULT: '#d97706', light: '#f59e0b', dark: '#b45309', foreground: '#ffffff' },
-      secondary: { DEFAULT: '#0f172a', light: '#1e293b', foreground: '#ffffff' },
-      accent: { DEFAULT: '#eab308', light: '#fde047', foreground: '#0f172a' },
-      surface: { DEFAULT: '#0b0f19', muted: '#111827', card: '#1e293b', glass: 'rgba(30, 41, 59, 0.95)' },
-      text: { primary: '#f8fafc', secondary: '#94a3b8' },
-      border: 'rgba(217, 119, 6, 0.20)'
+      primary: { DEFAULT: '#c5a059', light: '#d4af37', dark: '#9e7d3b', foreground: '#0d0c0a' },
+      secondary: { DEFAULT: '#181613', light: '#24211d', foreground: '#f5f2eb' },
+      accent: { DEFAULT: '#10b981', light: '#34d399', foreground: '#ffffff' },
+      surface: { DEFAULT: '#0d0c0a', muted: '#14120f', card: '#1a1814', glass: 'rgba(13, 12, 10, 0.94)' },
+      text: { primary: '#f5f2eb', secondary: '#a8a297' },
+      border: 'rgba(197, 160, 89, 0.22)'
     },
     typography: { heading: "'Playfair Display', serif", body: "'Inter', sans-serif" },
-    radius: { brand: '0.5rem', card: '0.75rem', btn: '0.5rem' },
-    glass: { blur: '12px', border: 'rgba(217, 119, 6, 0.20)' }
+    radius: { brand: '0.5rem', card: '0.85rem', btn: '0.5rem' },
+    glass: { blur: '16px', border: 'rgba(197, 160, 89, 0.22)' }
+  },
+
+  darkTheme: {
+    id: "theme-realestate-dark",
+    isDark: true,
+    colors: {
+      primary: { DEFAULT: '#c5a059', light: '#d4af37', dark: '#9e7d3b', foreground: '#0d0c0a' },
+      secondary: { DEFAULT: '#181613', light: '#24211d', foreground: '#f5f2eb' },
+      accent: { DEFAULT: '#10b981', light: '#34d399', foreground: '#ffffff' },
+      surface: { DEFAULT: '#0d0c0a', muted: '#14120f', card: '#1a1814', glass: 'rgba(13, 12, 10, 0.94)' },
+      text: { primary: '#f5f2eb', secondary: '#a8a297' },
+      border: 'rgba(197, 160, 89, 0.22)'
+    },
+    typography: { heading: "'Playfair Display', serif", body: "'Inter', sans-serif" },
+    radius: { brand: '0.5rem', card: '0.85rem', btn: '0.5rem' },
+    glass: { blur: '16px', border: 'rgba(197, 160, 89, 0.22)' }
+  },
+
+  lightTheme: {
+    id: "theme-realestate-light",
+    isDark: false,
+    colors: {
+      primary: { DEFAULT: '#c5a059', light: '#d4af37', dark: '#9e7d3b', foreground: '#ffffff' },
+      secondary: { DEFAULT: '#1e293b', light: '#334155', foreground: '#f8fafc' },
+      accent: { DEFAULT: '#059669', light: '#10b981', foreground: '#ffffff' },
+      surface: { DEFAULT: '#F7F9F9', muted: '#EEF2F3', card: '#ffffff', glass: 'rgba(247, 249, 249, 0.95)' },
+      text: { primary: '#1e293b', secondary: '#475569' },
+      border: 'rgba(197, 160, 89, 0.18)'
+    },
+    typography: { heading: "'Playfair Display', serif", body: "'Inter', sans-serif" },
+    radius: { brand: '0.5rem', card: '0.85rem', btn: '0.5rem' },
+    glass: { blur: '16px', border: 'rgba(197, 160, 89, 0.18)' }
   },
 
   logo: {
@@ -40,13 +73,13 @@ export const realEstateConfig = {
     mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.472718914118!2d77.09441631504332!3d28.45931298315752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18d4076326e5%3A0xb3a8080f0814a0f3!2sGolf%20Course%20Rd%2C%20Gurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
     regulatory: { reraEnabled: true, registrationNumber: "HRERA-GGM-2024-FB99117", disclaimer: "RERA Registered Channel Partner & Property Advisory." }
   },
-  
+
   mobileActions: {
     call: true,
     whatsapp: true,
     primaryAction: { label: "Book Site Visit", target: "#contact" }
   },
-  
+
   socialLinks: { instagram: "https://instagram.com", facebook: "https://facebook.com", twitter: "https://twitter.com", linkedin: "https://linkedin.com" },
 
   hero: {
@@ -85,7 +118,7 @@ export const realEstateConfig = {
     subtitle: "Where Dreams Find An Address.",
     description: "Flats & Beyond is a premier real estate consultancy founded by Tanuj Arora with a singular mission: to help every homebuyer and investor discover their ideal property with zero stress, absolute transparency, and maximum value.\n\nWhether you are searching for an opulent 3 BHK family apartment, a signature penthouse, a modern builder floor, or high-yielding commercial space in Gurugram & Delhi NCR, Tanuj Arora and our team deliver personalized advisory from initial site visit to final key handover.",
     experienceYears: "10+",
-    doctorsCount: "15+", 
+    doctorsCount: "15+",
     proceduresDone: "500+",
     imageMain: "/images/realestate/about-main.jpg",
     imageSecondary: "/images/realestate/about-secondary.jpg",
