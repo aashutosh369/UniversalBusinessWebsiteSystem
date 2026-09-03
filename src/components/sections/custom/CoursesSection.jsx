@@ -12,13 +12,13 @@ export const CoursesSection = () => {
       name: "Prof. Rajesh Verma, PhD",
       role: "Head of Physics & STEM Pedagogy",
       exp: "Ex-IIT Kanpur Professor, 20+ Yrs Experience",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80"
+      image: "/images/coaching/mentor-1.jpg"
     },
     {
       name: "Dr. Ananya Sharma, MD",
       role: "Department Chair — Organic Biology & Chemistry",
       exp: "AIIMS New Delhi Rank 1 Alumni",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80"
+      image: "/images/coaching/mentor-2.jpg"
     }
   ];
 

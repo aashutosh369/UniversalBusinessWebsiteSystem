@@ -12,14 +12,14 @@ export const TrainersSection = () => {
       name: "Dave 'Iron' Vance",
       role: "Head Strength & Powerlifting Coach",
       specs: "CSCS Certified • 12+ Yrs Coaching • Ex-Powerlifter",
-      image: "https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=600&q=80",
+      image: "/images/gym/trainer-1.jpg",
       tag: "Master Coach"
     },
     {
       name: "Marcus Sterling",
       role: "HYROX & High-Intensity Conditioning Director",
       specs: "NASM Master Coach • HYROX World Competitor",
-      image: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80",
+      image: "/images/gym/trainer-2.jpg",
       tag: "HIIT Director"
     }
   ];
