@@ -50,7 +50,7 @@ export const coachingConfig = {
     subtitle: "Structured courses, experienced faculty, regular assessments and personalised guidance designed to help students build strong concepts and prepare with confidence.",
     ctaPrimary: { text: "Explore Courses", href: "#services", icon: "Book" },
     ctaSecondary: { text: "Book a Free Counselling Session", href: "#contact", icon: "Calendar" },
-    image: "https://loremflickr.com/800/600/classroom,students?lock=65",
+    image: "/images/coaching/hero.jpg",
     highlights: ["Experienced Faculty", "Structured Learning", "Regular Assessments"]
   },
 
@@ -74,8 +74,8 @@ export const coachingConfig = {
     experienceYears: "10+",
     doctorsCount: "50+", 
     proceduresDone: "10k+",
-    imageMain: "https://loremflickr.com/800/600/education,teacher?lock=66",
-    imageSecondary: "https://loremflickr.com/800/600/students,study?lock=67",
+    imageMain: "/images/coaching/about-main.jpg",
+    imageSecondary: "/images/coaching/about-secondary.jpg",
     featuresList: ["Experienced Faculty", "Structured Curriculum", "Regular Assessments", "Doubt Support", "Personalised Guidance", "Digital Learning Resources"]
   },
 
@@ -84,13 +84,13 @@ export const coachingConfig = {
     title: "Programs Designed Around Your Goals.",
     subtitle: "Comprehensive preparation for school, boards, and competitive exams.",
     items: [
-      { id: "c1", category: "Foundation", title: "Foundation Program", shortDescription: "For Classes 8–10. Focuses on strong fundamentals and consistent academic practice.", fullDescription: "For Classes 8–10. Focuses on strong fundamentals and consistent academic practice. Subjects include Mathematics, Science, English, and Logical Reasoning.", duration: "1 Year", price: "Starting from ₹15,000", popular: false, icon: "BookOpen", image: "https://loremflickr.com/800/600/students,classroom?lock=68", features: ["Math & Science", "Logical Reasoning", "Regular Tests"] },
-      { id: "c2", category: "Senior Secondary", title: "Senior Secondary Program", shortDescription: "For Classes 11–12 (Science & Commerce). Concept building, board preparation and structured revision.", fullDescription: "For Classes 11–12 (Science & Commerce). Concept building, board preparation and structured revision.", duration: "1-2 Years", price: "Starting from ₹35,000", popular: true, icon: "Award", image: "https://loremflickr.com/800/600/exam,preparation?lock=69", features: ["Board Focus", "Concept Building", "Revision"] },
-      { id: "c3", category: "Engineering", title: "JEE Preparation", shortDescription: "Comprehensive preparation for engineering entrance exams.", fullDescription: "Comprehensive preparation for JEE with focus on Physics, Chemistry, and Mathematics.", duration: "1-2 Years", price: "Starting from ₹50,000", popular: true, icon: "Target", image: "https://loremflickr.com/800/600/mathematics?lock=70", features: ["Test Series", "Doubt Support", "Structured Material"] },
-      { id: "c4", category: "Medical", title: "NEET Preparation", shortDescription: "Structured preparation for medical entrance exams.", fullDescription: "Structured preparation for NEET with focus on Physics, Chemistry, and Biology.", duration: "1-2 Years", price: "Starting from ₹50,000", popular: true, icon: "Activity", image: "https://loremflickr.com/800/600/biology,study?lock=71", features: ["Biology Focus", "Regular Tests", "Doubt Support"] },
-      { id: "c5", category: "Entrance", title: "CUET Preparation", shortDescription: "Domain Subjects, General Test, and Language Preparation.", fullDescription: "Domain Subjects, General Test, and Language Preparation.", duration: "6 Months", price: "Starting from ₹12,000", popular: false, icon: "Globe", image: "https://loremflickr.com/800/600/education,teacher?lock=72", features: ["Domain Subjects", "General Test", "Mock Tests"] },
-      { id: "c6", category: "Competitive", title: "Competitive Exam Preparation", shortDescription: "Preparation for SSC, Banking, and other government exams.", fullDescription: "Preparation for SSC, Banking, and other government exams.", duration: "1 Year", price: "Starting from ₹10,000", popular: false, icon: "Briefcase", image: "https://loremflickr.com/800/600/writing,exam?lock=73", features: ["Reasoning", "Quantitative", "General Awareness"] },
-      { id: "c7", category: "Technology", title: "Coding & Technology Programs", shortDescription: "Full Stack Development, Python, Data Analytics, AI.", fullDescription: "Full Stack Development, Python, Data Analytics, AI.", duration: "6 Months", price: "Starting from ₹20,000", popular: false, icon: "Code", image: "https://loremflickr.com/800/600/coding,laptop?lock=74", features: ["Full Stack", "Python", "AI & ML"] }
+      { id: "c1", category: "Foundation", title: "Foundation Program", shortDescription: "For Classes 8–10. Focuses on strong fundamentals and consistent academic practice.", fullDescription: "For Classes 8–10. Focuses on strong fundamentals and consistent academic practice. Subjects include Mathematics, Science, English, and Logical Reasoning.", duration: "1 Year", price: "Starting from ₹15,000", popular: false, icon: "BookOpen", image: "/images/coaching/course-1.jpg", features: ["Math & Science", "Logical Reasoning", "Regular Tests"] },
+      { id: "c2", category: "Senior Secondary", title: "Senior Secondary Program", shortDescription: "For Classes 11–12 (Science & Commerce). Concept building, board preparation and structured revision.", fullDescription: "For Classes 11–12 (Science & Commerce). Concept building, board preparation and structured revision.", duration: "1-2 Years", price: "Starting from ₹35,000", popular: true, icon: "Award", image: "/images/coaching/course-2.jpg", features: ["Board Focus", "Concept Building", "Revision"] },
+      { id: "c3", category: "Engineering", title: "JEE Preparation", shortDescription: "Comprehensive preparation for engineering entrance exams.", fullDescription: "Comprehensive preparation for JEE with focus on Physics, Chemistry, and Mathematics.", duration: "1-2 Years", price: "Starting from ₹50,000", popular: true, icon: "Target", image: "/images/coaching/course-3.jpg", features: ["Test Series", "Doubt Support", "Structured Material"] },
+      { id: "c4", category: "Medical", title: "NEET Preparation", shortDescription: "Structured preparation for medical entrance exams.", fullDescription: "Structured preparation for NEET with focus on Physics, Chemistry, and Biology.", duration: "1-2 Years", price: "Starting from ₹50,000", popular: true, icon: "Activity", image: "/images/coaching/course-4.jpg", features: ["Biology Focus", "Regular Tests", "Doubt Support"] },
+      { id: "c5", category: "Entrance", title: "CUET Preparation", shortDescription: "Domain Subjects, General Test, and Language Preparation.", fullDescription: "Domain Subjects, General Test, and Language Preparation.", duration: "6 Months", price: "Starting from ₹12,000", popular: false, icon: "Globe", image: "/images/coaching/course-1.jpg", features: ["Domain Subjects", "General Test", "Mock Tests"] },
+      { id: "c6", category: "Competitive", title: "Competitive Exam Preparation", shortDescription: "Preparation for SSC, Banking, and other government exams.", fullDescription: "Preparation for SSC, Banking, and other government exams.", duration: "1 Year", price: "Starting from ₹10,000", popular: false, icon: "Briefcase", image: "/images/coaching/course-2.jpg", features: ["Reasoning", "Quantitative", "General Awareness"] },
+      { id: "c7", category: "Technology", title: "Coding & Technology Programs", shortDescription: "Full Stack Development, Python, Data Analytics, AI.", fullDescription: "Full Stack Development, Python, Data Analytics, AI.", duration: "6 Months", price: "Starting from ₹20,000", popular: false, icon: "Code", image: "/images/coaching/course-3.jpg", features: ["Full Stack", "Python", "AI & ML"] }
     ]
   },
 
@@ -124,9 +124,9 @@ export const coachingConfig = {
     title: "Meet Our Faculty",
     subtitle: "Experienced educators focused on clear concepts and effective learning.",
     items: [
-      { name: "Aarav Mehta", role: "M.Sc. Mathematics", specialty: "Mathematics & Competitive Exam Preparation", bio: "10+ Years Experience. Focuses on building strong mathematical fundamentals and exam-oriented problem solving.", image: "https://loremflickr.com/800/600/indian,man,teacher?lock=75" },
-      { name: "Dr. Kavya Sharma", role: "M.Sc. Physics", specialty: "Physics & Conceptual Learning", bio: "8+ Years Experience. Known for simplifying complex physics concepts through practical examples and structured problem solving.", image: "https://loremflickr.com/800/600/indian,portrait?lock=76" },
-      { name: "Rohan Verma", role: "M.Sc. Chemistry", specialty: "Chemistry & Entrance Preparation", bio: "9+ Years Experience. Focuses on conceptual clarity, problem solving and systematic exam preparation.", image: "https://loremflickr.com/800/600/indian,man,face?lock=77" }
+      { name: "Aarav Mehta", role: "M.Sc. Mathematics", specialty: "Mathematics & Competitive Exam Preparation", bio: "10+ Years Experience. Focuses on building strong mathematical fundamentals and exam-oriented problem solving.", image: "/images/coaching/course-4.jpg" },
+      { name: "Dr. Kavya Sharma", role: "M.Sc. Physics", specialty: "Physics & Conceptual Learning", bio: "8+ Years Experience. Known for simplifying complex physics concepts through practical examples and structured problem solving.", image: "/images/coaching/course-1.jpg" },
+      { name: "Rohan Verma", role: "M.Sc. Chemistry", specialty: "Chemistry & Entrance Preparation", bio: "9+ Years Experience. Focuses on conceptual clarity, problem solving and systematic exam preparation.", image: "/images/coaching/course-2.jpg" }
     ]
   },
 
@@ -194,12 +194,12 @@ export const coachingConfig = {
     title: "Inside the Academy",
     subtitle: "A conducive environment for learning.",
     items: [
-      { id: 1, title: "Classrooms", category: "Classroom", image: "https://loremflickr.com/800/600/mathematics?lock=78" },
-      { id: 2, title: "Faculty", category: "Interaction", image: "https://loremflickr.com/800/600/education,teacher?lock=79" },
-      { id: 3, title: "Students Learning", category: "Study", image: "https://loremflickr.com/800/600/students,study?lock=80" },
-      { id: 4, title: "Library / Study Area", category: "Facility", image: "https://loremflickr.com/800/600/library,books?lock=81" },
-      { id: 5, title: "Workshops", category: "Event", image: "https://loremflickr.com/800/600/workshop,seminar?lock=82" },
-      { id: 6, title: "Technology Labs", category: "Lab", image: "https://loremflickr.com/800/600/coding,laptop?lock=83" }
+      { id: 1, title: "Classrooms", category: "Classroom", image: "/images/coaching/course-3.jpg" },
+      { id: 2, title: "Faculty", category: "Interaction", image: "/images/coaching/course-4.jpg" },
+      { id: 3, title: "Students Learning", category: "Study", image: "/images/coaching/course-1.jpg" },
+      { id: 4, title: "Library / Study Area", category: "Facility", image: "/images/coaching/course-2.jpg" },
+      { id: 5, title: "Workshops", category: "Event", image: "/images/coaching/course-3.jpg" },
+      { id: 6, title: "Technology Labs", category: "Lab", image: "/images/coaching/course-4.jpg" }
     ]
   },
 
@@ -208,8 +208,8 @@ export const coachingConfig = {
     title: "What Students & Parents Say",
     subtitle: "Demo testimonials showcasing the Nexora experience.",
     items: [
-      { id: 1, name: "Aarav Kumar", role: "Sample Student Experience", rating: 5, quote: "Classes are well structured and the faculty explains difficult concepts in a way that is easy to understand.", avatar: "https://loremflickr.com/800/600/indian,girl,face?lock=84", verified: true, treatment: "JEE Preparation" },
-      { id: 2, name: "Priya Sharma", role: "Demo Testimonial", rating: 5, quote: "The regular tests and feedback helped us understand where improvement was needed.", avatar: "https://loremflickr.com/800/600/indian,woman,face?lock=85", verified: true, treatment: "Parent" }
+      { id: 1, name: "Aarav Kumar", role: "Sample Student Experience", rating: 5, quote: "Classes are well structured and the faculty explains difficult concepts in a way that is easy to understand.", avatar: "/images/coaching/about-main.jpg", verified: true, treatment: "JEE Preparation" },
+      { id: 2, name: "Priya Sharma", role: "Demo Testimonial", rating: 5, quote: "The regular tests and feedback helped us understand where improvement was needed.", avatar: "/images/coaching/about-main.jpg", verified: true, treatment: "Parent" }
     ]
   },
 

@@ -50,7 +50,7 @@ export const restaurantConfig = {
     subtitle: "Indulge in prime dry-aged steaks, hand-rolled artisanal pastas, woodfired Neapolitan pizzas, and vintage Reserve wines in a romantic candlelit atmosphere.",
     ctaPrimary: { text: "Reserve A Table", href: "#contact", icon: "Utensils" },
     ctaSecondary: { text: "Explore Dinner Menu", href: "#services", icon: "ArrowRight" },
-    image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/restaurant/hero.jpg",
     highlights: ["100% Organic Local Produce", "Executive Chef Tasting Menu", "Cellar Master 500+ Wines"]
   },
 
@@ -77,8 +77,8 @@ export const restaurantConfig = {
     experienceYears: "10+",
     doctorsCount: "8+",
     proceduresDone: "50,000+",
-    imageMain: "https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80",
-    imageSecondary: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80",
+    imageMain: "/images/restaurant/about-main.jpg",
+    imageSecondary: "/images/restaurant/about-secondary.jpg",
     featuresList: [
       "Open Hearth Woodfired Kitchen",
       "Private Chef VIP Tasting Table",
@@ -102,7 +102,7 @@ export const restaurantConfig = {
         price: "$85",
         popular: true,
         icon: "Utensils",
-        image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
+        image: "/images/restaurant/dish-1.jpg",
         features: ["45-Day In-House Dry Aged", "A5 Japanese Certified Wagyu", "Truffle Reduction Sauce"]
       },
       {
@@ -115,7 +115,7 @@ export const restaurantConfig = {
         price: "$46",
         popular: true,
         icon: "Sparkles",
-        image: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&q=80",
+        image: "/images/restaurant/dish-2.jpg",
         features: ["Hand-Rolled Fresh Daily", "Poached Whole Lobster Tail", "Fresh Shaved Black Truffle"]
       },
       {
@@ -128,7 +128,7 @@ export const restaurantConfig = {
         price: "$32",
         popular: false,
         icon: "Flame",
-        image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80",
+        image: "/images/restaurant/dish-3.jpg",
         features: ["72-Hr Sourdough Ferment", "Fresh Imported Italian Burrata", "900°F Oak Woodfire Oven"]
       }
     ]
@@ -149,9 +149,9 @@ export const restaurantConfig = {
     title: "A Feast For The Eyes",
     subtitle: "Explore our woodfired bistro atmosphere and chef platted creations.",
     items: [
-      { id: 1, title: "45-Day Dry Aged Ribeye", category: "Dishes", image: "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80" },
-      { id: 2, title: "Romantic Candlelit Bistro Dining", category: "Ambiance", image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" },
-      { id: 3, title: "Artisanal Woodfired Pizza Oven", category: "Hearth", image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80" }
+      { id: 1, title: "45-Day Dry Aged Ribeye", category: "Dishes", image: "/images/restaurant/dish-4.jpg" },
+      { id: 2, title: "Romantic Candlelit Bistro Dining", category: "Ambiance", image: "/images/restaurant/dish-5.jpg" },
+      { id: 3, title: "Artisanal Woodfired Pizza Oven", category: "Hearth", image: "/images/restaurant/dish-6.jpg" }
     ]
   },
 
@@ -166,7 +166,7 @@ export const restaurantConfig = {
         role: "Chicago Tribune Food Critic",
         rating: 5,
         quote: "Savor Bistro delivers one of the finest Wagyu ribeyes in the Midwest. The woodfired aroma and lobster pasta are unforgettable!",
-        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+        avatar: "/images/restaurant/about-main.jpg",
         verified: true,
         treatment: "Food Critic Review"
       },
@@ -176,7 +176,7 @@ export const restaurantConfig = {
         role: "Anniversary Celebration Guest",
         rating: 5,
         quote: "We celebrated our 10th anniversary at the private Chef's Table. Impeccable wine pairings and 7-star service!",
-        avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+        avatar: "/images/restaurant/about-main.jpg",
         verified: true,
         treatment: "Anniversary Dinner"
       }

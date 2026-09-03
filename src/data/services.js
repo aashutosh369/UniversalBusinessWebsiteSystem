@@ -9,7 +9,7 @@ export const defaultServices = [
     price: "$299",
     popular: true,
     icon: "Sparkles",
-    image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80",
+    image: "/images/clinic/service-1.jpg",
     features: [
       "FDA Cleared Non-invasive Tech",
       "Painless & No Downtime",
@@ -27,7 +27,7 @@ export const defaultServices = [
     price: "$199",
     popular: true,
     icon: "Droplets",
-    image: "https://images.unsplash.com/photo-1512290900673-7002fa016352?auto=format&fit=crop&w=800&q=80",
+    image: "/images/clinic/service-2.jpg",
     features: [
       "Deep Pore Vacuum Extraction",
       "Peptide & Vitamin C Boosters",
@@ -45,7 +45,7 @@ export const defaultServices = [
     price: "$349",
     popular: false,
     icon: "Activity",
-    image: "https://images.unsplash.com/photo-1519824145371-296894a0d96f?auto=format&fit=crop&w=800&q=80",
+    image: "/images/clinic/service-3.jpg",
     features: [
       "Destroys Fat Cells Permanently",
       "Targeted Abdominal & Thigh Sculpting",
@@ -63,7 +63,7 @@ export const defaultServices = [
     price: "$399",
     popular: false,
     icon: "HeartPulse",
-    image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&q=80",
+    image: "/images/clinic/service-4.jpg",
     features: [
       "Performed by Board Certified Doctors",
       "Natural-looking Ergonomic Results",
@@ -81,7 +81,7 @@ export const defaultServices = [
     price: "$179",
     popular: false,
     icon: "Zap",
-    image: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80",
+    image: "/images/clinic/service-5.jpg",
     features: [
       "100% Bioavailable Absorption",
       "Instant Energy & Mental Clarity",
@@ -99,7 +99,7 @@ export const defaultServices = [
     price: "$249",
     popular: false,
     icon: "ShieldAlert",
-    image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80",
+    image: "/images/clinic/service-6.jpg",
     features: [
       "Kills Acne-causing P. Acnes Bacteria",
       "Reduces Red Inflammation Rapidly",

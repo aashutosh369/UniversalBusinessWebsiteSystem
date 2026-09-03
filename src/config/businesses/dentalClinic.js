@@ -58,7 +58,7 @@ export const dentalClinicConfig = {
     description: "From routine dental check-ups and painless cleaning to advanced smile makeovers and restorative treatments, our team provides comfortable, transparent and personalised dental care for patients of all ages.",
     ctaPrimary: { text: "Book an Appointment", href: "#contact", icon: "Calendar" },
     ctaSecondary: { text: "WhatsApp the Clinic", href: "https://wa.me/919876543210", icon: "MessageSquare" },
-    image: "https://loremflickr.com/800/600/dentist,clinic?lock=2",
+    image: "/images/dental/hero.jpg",
     highlights: ["Experienced Dental Professionals", "Modern Dental Technology", "Family-Friendly Care"]
   },
 
@@ -81,8 +81,8 @@ export const dentalClinicConfig = {
     experienceYears: "10+",
     doctorsCount: "5+",
     proceduresDone: "10,000+",
-    imageMain: "https://loremflickr.com/800/600/dentist,patient?lock=3",
-    imageSecondary: "https://loremflickr.com/800/600/dental,care?lock=4",
+    imageMain: "/images/dental/about-main.jpg",
+    imageSecondary: "/images/dental/about-secondary.jpg",
     featuresList: [
       "Personalised Treatment Plans",
       "Modern Dental Equipment",
@@ -108,7 +108,7 @@ export const dentalClinicConfig = {
         price: "Starting from ₹500",
         popular: true,
         icon: "Search",
-        image: "https://loremflickr.com/800/600/dentist,checkup?lock=5",
+        image: "/images/dental/doctor-1.jpg",
         features: ["Oral examination", "Digital X-rays if needed", "Personalised advice"]
       },
       {
@@ -121,7 +121,7 @@ export const dentalClinicConfig = {
         price: "Starting from ₹1500",
         popular: true,
         icon: "Sparkles",
-        image: "https://loremflickr.com/800/600/teeth,cleaning?lock=6",
+        image: "/images/dental/doctor-2.jpg",
         features: ["Tartar removal", "Stain removal", "Polishing"]
       },
       {
@@ -134,7 +134,7 @@ export const dentalClinicConfig = {
         price: "Starting from ₹4000",
         popular: false,
         icon: "Activity",
-        image: "https://loremflickr.com/800/600/dentist,procedure?lock=7",
+        image: "/images/dental/doctor-1.jpg",
         features: ["Pain relief", "Tooth preservation", "Modern techniques"]
       },
       {
@@ -147,7 +147,7 @@ export const dentalClinicConfig = {
         price: "Starting from ₹1000",
         popular: false,
         icon: "Shield",
-        image: "https://loremflickr.com/800/600/dental,tools?lock=8",
+        image: "/images/dental/doctor-2.jpg",
         features: ["Tooth-coloured material", "Durable", "Prevents further decay"]
       },
       {
@@ -160,7 +160,7 @@ export const dentalClinicConfig = {
         price: "Starting from ₹5000",
         popular: false,
         icon: "Layers",
-        image: "https://loremflickr.com/800/600/dentist,clinic?lock=9",
+        image: "/images/dental/doctor-1.jpg",
         features: ["Custom fit", "Natural look", "Durable materials"]
       },
       {
@@ -173,7 +173,7 @@ export const dentalClinicConfig = {
         price: "Starting from ₹5000",
         popular: true,
         icon: "Sun",
-        image: "https://loremflickr.com/800/600/smile,teeth?lock=10",
+        image: "/images/dental/doctor-2.jpg",
         features: ["Noticeable results", "Safe procedure", "Custom trays available"]
       },
       {
@@ -186,7 +186,7 @@ export const dentalClinicConfig = {
         price: "Starting from ₹30000",
         popular: false,
         icon: "Smile",
-        image: "https://loremflickr.com/800/600/braces,smile?lock=11",
+        image: "/images/dental/doctor-1.jpg",
         features: ["Metal & Ceramic options", "Bite correction", "Long-term results"]
       },
       {
@@ -199,7 +199,7 @@ export const dentalClinicConfig = {
         price: "Starting from ₹50000",
         popular: true,
         icon: "CheckCircle",
-        image: "https://loremflickr.com/800/600/dentist,patient?lock=12",
+        image: "/images/dental/doctor-2.jpg",
         features: ["Nearly invisible", "Removable", "Comfortable"]
       },
       {
@@ -212,7 +212,7 @@ export const dentalClinicConfig = {
         price: "Starting from ₹25000",
         popular: false,
         icon: "Anchor",
-        image: "https://loremflickr.com/800/600/dentist,clinic?lock=13",
+        image: "/images/dental/doctor-1.jpg",
         features: ["Permanent solution", "Natural function", "Prevents bone loss"]
       },
       {
@@ -225,7 +225,7 @@ export const dentalClinicConfig = {
         price: "Starting from ₹3000",
         popular: false,
         icon: "Scissors",
-        image: "https://loremflickr.com/800/600/dentist,procedure?lock=14",
+        image: "/images/dental/doctor-2.jpg",
         features: ["Safe extraction", "Pain management", "Quick recovery protocols"]
       },
       {
@@ -238,7 +238,7 @@ export const dentalClinicConfig = {
         price: "Starting from ₹800",
         popular: false,
         icon: "Heart",
-        image: "https://loremflickr.com/800/600/child,dentist?lock=15",
+        image: "/images/dental/doctor-1.jpg",
         features: ["Child-friendly approach", "Preventive care", "Fluoride treatments"]
       },
       {
@@ -251,7 +251,7 @@ export const dentalClinicConfig = {
         price: "Starting from ₹15000",
         popular: false,
         icon: "Camera",
-        image: "https://loremflickr.com/800/600/beautiful,smile?lock=16",
+        image: "/images/dental/doctor-2.jpg",
         features: ["Digital planning", "Veneers", "Complete makeover"]
       }
     ]
@@ -307,7 +307,7 @@ export const dentalClinicConfig = {
     badge: "OUR CLINIC",
     title: "Modern Dentistry. Thoughtful Experience.",
     subtitle: "We invest in modern equipment and maintain strict hygiene protocols to ensure a safe and comfortable visit.",
-    image: "https://loremflickr.com/800/600/dental,tools?lock=17",
+    image: "/images/dental/doctor-1.jpg",
     items: [
       { id: 1, icon: "Camera", title: "Digital Dental Imaging", description: "For accurate diagnosis and treatment planning." },
       { id: 2, icon: "Tool", title: "Modern Treatment Equipment", description: "To ensure efficient and comfortable procedures." },
@@ -328,7 +328,7 @@ export const dentalClinicConfig = {
         role: "BDS, MDS — Conservative Dentistry & Endodontics",
         experience: "10+ Years",
         bio: "Focused on restorative dentistry, root canal treatment and preventive oral care.",
-        image: "https://loremflickr.com/800/600/indian,female,doctor?lock=18",
+        image: "/images/dental/doctor-2.jpg",
         specialties: ["Root Canal", "Restorative"]
       },
       {
@@ -337,7 +337,7 @@ export const dentalClinicConfig = {
         role: "BDS, MDS — Orthodontics",
         experience: "8+ Years",
         bio: "Specialises in orthodontic treatment, bite correction and clear aligner planning.",
-        image: "https://loremflickr.com/800/600/indian,male,doctor?lock=19",
+        image: "/images/dental/doctor-1.jpg",
         specialties: ["Braces", "Clear Aligners"]
       },
       {
@@ -346,7 +346,7 @@ export const dentalClinicConfig = {
         role: "BDS — Pediatric & Preventive Dentistry",
         experience: "6+ Years",
         bio: "Focused on creating comfortable and positive dental experiences for children.",
-        image: "https://loremflickr.com/800/600/indian,female,dentist?lock=20",
+        image: "/images/dental/doctor-2.jpg",
         specialties: ["Pediatric Care", "Preventive"]
       }
     ]
@@ -357,10 +357,10 @@ export const dentalClinicConfig = {
     title: "Inside Our Clinic",
     subtitle: "A clean, modern, and welcoming environment.",
     items: [
-      { id: 1, title: "Clinic Reception", category: "Facility", image: "https://loremflickr.com/800/600/clinic,reception?lock=21" },
-      { id: 2, title: "Treatment Room", category: "Facility", image: "https://loremflickr.com/800/600/dentist,clinic?lock=22" },
-      { id: 3, title: "Dental Equipment", category: "Technology", image: "https://loremflickr.com/800/600/dental,tools?lock=23" },
-      { id: 4, title: "Consultation Area", category: "Facility", image: "https://loremflickr.com/800/600/medical,consultation?lock=24" }
+      { id: 1, title: "Clinic Reception", category: "Facility", image: "/images/dental/doctor-1.jpg" },
+      { id: 2, title: "Treatment Room", category: "Facility", image: "/images/dental/doctor-2.jpg" },
+      { id: 3, title: "Dental Equipment", category: "Technology", image: "/images/dental/doctor-1.jpg" },
+      { id: 4, title: "Consultation Area", category: "Facility", image: "/images/dental/doctor-2.jpg" }
     ]
   },
 
@@ -375,7 +375,7 @@ export const dentalClinicConfig = {
         role: "Patient",
         rating: 5,
         quote: "I appreciated how clearly the dentist explained every step before starting the treatment. The entire experience felt comfortable and professional.",
-        avatar: "https://loremflickr.com/800/600/indian,girl,face?lock=25",
+        avatar: "/images/dental/about-main.jpg",
         verified: true,
         treatment: "Dental Check-up"
       },
@@ -385,7 +385,7 @@ export const dentalClinicConfig = {
         role: "Patient",
         rating: 5,
         quote: "The clinic environment was clean and welcoming, and the team was very helpful throughout my visit.",
-        avatar: "https://loremflickr.com/800/600/indian,portrait?lock=26",
+        avatar: "/images/dental/about-main.jpg",
         verified: true,
         treatment: "Root Canal"
       }

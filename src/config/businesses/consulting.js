@@ -48,7 +48,7 @@ export const consultingConfig = {
     subtitle: "We partner with Fortune leaders, enterprise CEOs, and high-growth founders to optimize operations, capital structure, and international scaling.",
     ctaPrimary: { text: "Schedule Strategy Audit", href: "#contact", icon: "TrendingUp" },
     ctaSecondary: { text: "Explore Advisory Practice", href: "#services", icon: "ArrowRight" },
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/consulting/hero.jpg",
     highlights: ["$2.4B+ Client Value Created", "Ex-McKinsey & BCG Partners", "100% Guaranteed Strategic ROI"]
   },
 
@@ -75,8 +75,8 @@ export const consultingConfig = {
     experienceYears: "14+",
     doctorsCount: "24+",
     proceduresDone: "450+",
-    imageMain: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
-    imageSecondary: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+    imageMain: "/images/consulting/about-main.jpg",
+    imageSecondary: "/images/consulting/about-secondary.jpg",
     featuresList: [
       "Direct Boardroom Executive Mentorship",
       "Confidential M&A Valuation & Due Diligence",
@@ -100,7 +100,7 @@ export const consultingConfig = {
         price: "Custom Audit",
         popular: true,
         icon: "Briefcase",
-        image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80",
+        image: "/images/consulting/service-1.jpg",
         features: ["Confidential Target Identification", "Discounted Cash Flow Valuation", "Post-Merger System Integration"]
       },
       {
@@ -113,7 +113,7 @@ export const consultingConfig = {
         price: "Custom Advisory",
         popular: true,
         icon: "TrendingUp",
-        image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
+        image: "/images/consulting/service-2.jpg",
         features: ["AI Workflow Integration", "Legacy System Replacement", "30% Operational Cost Reduction"]
       },
       {
@@ -126,7 +126,7 @@ export const consultingConfig = {
         price: "Performance Retainer",
         popular: false,
         icon: "Award",
-        image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+        image: "/images/consulting/service-3.jpg",
         features: ["100-Day EBITDA Booster Plan", "Executive Talent Alignment", "International Market Entry"]
       }
     ]
@@ -147,9 +147,9 @@ export const consultingConfig = {
     title: "Inside Vanguard Headquarters",
     subtitle: "Explore our Wall Street boardroom suites and client strategy summits.",
     items: [
-      { id: 1, title: "Wall Street Executive Boardroom Suite", category: "Headquarters", image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" },
-      { id: 2, title: "Enterprise Executive Strategy Summit", category: "Strategy", image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" },
-      { id: 3, title: "Financial Center Tower Architecture", category: "Office", image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" }
+      { id: 1, title: "Wall Street Executive Boardroom Suite", category: "Headquarters", image: "/images/consulting/service-4.jpg" },
+      { id: 2, title: "Enterprise Executive Strategy Summit", category: "Strategy", image: "/images/consulting/service-1.jpg" },
+      { id: 3, title: "Financial Center Tower Architecture", category: "Office", image: "/images/consulting/service-2.jpg" }
     ]
   },
 
@@ -164,7 +164,7 @@ export const consultingConfig = {
         role: "CEO, NexaTech Global",
         rating: 5,
         quote: "Vanguard’s M&A advisory team was instrumental during our $450M acquisition. Their due diligence saved us $40M in valuation adjustments!",
-        avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+        avatar: "/images/consulting/about-main.jpg",
         verified: true,
         treatment: "$450M M&A Deal"
       },
@@ -174,7 +174,7 @@ export const consultingConfig = {
         role: "Managing Director, Apex Capital",
         rating: 5,
         quote: "The 100-day portfolio value creation plan delivered a 38% increase in EBITDA margin within 4 months. Phenomenal execution!",
-        avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80",
+        avatar: "/images/consulting/about-main.jpg",
         verified: true,
         treatment: "Private Equity Value"
       }

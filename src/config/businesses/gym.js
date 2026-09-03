@@ -51,7 +51,7 @@ export const gymConfig = {
     description: "New Member Offer — Get 20% OFF on your first 3 months. Start your fitness journey today.",
     ctaPrimary: { text: "Join Now", href: "#contact", icon: "Activity" },
     ctaSecondary: { text: "View Membership Plans", href: "#services", icon: "CreditCard" },
-    image: "https://loremflickr.com/800/600/gym,workout?lock=47",
+    image: "/images/gym/hero.jpg",
     highlights: ["Modern Equipment", "Certified Trainers", "Clean & Hygienic"]
   },
 
@@ -63,8 +63,8 @@ export const gymConfig = {
     experienceYears: "7+",
     doctorsCount: "15+", 
     proceduresDone: "2,000+", 
-    imageMain: "https://loremflickr.com/800/600/gym,weights?lock=48",
-    imageSecondary: "https://loremflickr.com/800/600/fitness,training?lock=49",
+    imageMain: "/images/gym/about-main.jpg",
+    imageSecondary: "/images/gym/about-secondary.jpg",
     featuresList: ["Modern Fitness Equipment", "Certified Trainers", "Clean & Hygienic Facility", "Separate Changing Rooms", "Flexible Membership Plans", "Beginner-Friendly Environment"]
   },
 
@@ -73,14 +73,14 @@ export const gymConfig = {
     title: "Training Programs",
     subtitle: "Designed to help you reach your fitness goals.",
     items: [
-      { id: "p1", category: "Training", title: "General Fitness", shortDescription: "Improve overall health and stamina.", fullDescription: "Improve overall health and stamina.", duration: "Daily", price: "Included", popular: true, icon: "Activity", image: "https://loremflickr.com/800/600/fitness?lock=50", features: ["Cardio", "Basic Strength", "Stretching"] },
-      { id: "p2", category: "Strength", title: "Weight Training", shortDescription: "Build strength with free weights and machines.", fullDescription: "Build strength with free weights and machines.", duration: "Daily", price: "Included", popular: true, icon: "Dumbbell", image: "https://loremflickr.com/800/600/weightlifting?lock=51", features: ["Free Weights", "Machines", "Form Guidance"] },
-      { id: "p3", category: "Goal-Oriented", title: "Fat Loss Program", shortDescription: "Structured workouts focused on fat loss.", fullDescription: "Structured workouts focused on fat loss.", duration: "Custom", price: "Included", popular: true, icon: "Flame", image: "https://loremflickr.com/800/600/cardio,workout?lock=52", features: ["HIIT", "Cardio", "Diet Guidance"] },
-      { id: "p4", category: "Goal-Oriented", title: "Muscle Building", shortDescription: "Hypertrophy focused training plans.", fullDescription: "Hypertrophy focused training plans.", duration: "Custom", price: "Included", popular: false, icon: "Target", image: "https://loremflickr.com/800/600/fitness,training?lock=53", features: ["Progressive Overload", "Strength Focus", "Diet Guidance"] },
-      { id: "p5", category: "Specialized", title: "Personal Training", shortDescription: "1-on-1 coaching for accelerated results.", fullDescription: "1-on-1 coaching for accelerated results.", duration: "Hourly", price: "Add-on", popular: true, icon: "User", image: "https://loremflickr.com/800/600/gym,weights?lock=54", features: ["Custom Plan", "Form Correction", "Motivation"] },
-      { id: "p6", category: "Training", title: "Functional Training", shortDescription: "Improve agility, balance, and core strength.", fullDescription: "Improve agility, balance, and core strength.", duration: "Daily", price: "Included", popular: false, icon: "Crosshair", image: "https://loremflickr.com/800/600/fitness?lock=55", features: ["Kettlebells", "TRX", "Plyometrics"] },
-      { id: "p7", category: "Cardio", title: "Cardio Training", shortDescription: "Enhance cardiovascular health.", fullDescription: "Enhance cardiovascular health.", duration: "Daily", price: "Included", popular: false, icon: "Heart", image: "https://loremflickr.com/800/600/cardio,workout?lock=56", features: ["Treadmills", "Ellipticals", "Cycling"] },
-      { id: "p8", category: "Strength", title: "Strength & Conditioning", shortDescription: "Advanced athletic performance training.", fullDescription: "Advanced athletic performance training.", duration: "Custom", price: "Included", popular: false, icon: "Zap", image: "https://loremflickr.com/800/600/gym,workout?lock=57", features: ["Powerlifting", "Agility Drills", "Endurance"] }
+      { id: "p1", category: "Training", title: "General Fitness", shortDescription: "Improve overall health and stamina.", fullDescription: "Improve overall health and stamina.", duration: "Daily", price: "Included", popular: true, icon: "Activity", image: "/images/gym/trainer-1.jpg", features: ["Cardio", "Basic Strength", "Stretching"] },
+      { id: "p2", category: "Strength", title: "Weight Training", shortDescription: "Build strength with free weights and machines.", fullDescription: "Build strength with free weights and machines.", duration: "Daily", price: "Included", popular: true, icon: "Dumbbell", image: "/images/gym/trainer-2.jpg", features: ["Free Weights", "Machines", "Form Guidance"] },
+      { id: "p3", category: "Goal-Oriented", title: "Fat Loss Program", shortDescription: "Structured workouts focused on fat loss.", fullDescription: "Structured workouts focused on fat loss.", duration: "Custom", price: "Included", popular: true, icon: "Flame", image: "/images/gym/trainer-3.jpg", features: ["HIIT", "Cardio", "Diet Guidance"] },
+      { id: "p4", category: "Goal-Oriented", title: "Muscle Building", shortDescription: "Hypertrophy focused training plans.", fullDescription: "Hypertrophy focused training plans.", duration: "Custom", price: "Included", popular: false, icon: "Target", image: "/images/gym/trainer-4.jpg", features: ["Progressive Overload", "Strength Focus", "Diet Guidance"] },
+      { id: "p5", category: "Specialized", title: "Personal Training", shortDescription: "1-on-1 coaching for accelerated results.", fullDescription: "1-on-1 coaching for accelerated results.", duration: "Hourly", price: "Add-on", popular: true, icon: "User", image: "/images/gym/trainer-1.jpg", features: ["Custom Plan", "Form Correction", "Motivation"] },
+      { id: "p6", category: "Training", title: "Functional Training", shortDescription: "Improve agility, balance, and core strength.", fullDescription: "Improve agility, balance, and core strength.", duration: "Daily", price: "Included", popular: false, icon: "Crosshair", image: "/images/gym/trainer-2.jpg", features: ["Kettlebells", "TRX", "Plyometrics"] },
+      { id: "p7", category: "Cardio", title: "Cardio Training", shortDescription: "Enhance cardiovascular health.", fullDescription: "Enhance cardiovascular health.", duration: "Daily", price: "Included", popular: false, icon: "Heart", image: "/images/gym/trainer-3.jpg", features: ["Treadmills", "Ellipticals", "Cycling"] },
+      { id: "p8", category: "Strength", title: "Strength & Conditioning", shortDescription: "Advanced athletic performance training.", fullDescription: "Advanced athletic performance training.", duration: "Custom", price: "Included", popular: false, icon: "Zap", image: "/images/gym/trainer-4.jpg", features: ["Powerlifting", "Agility Drills", "Endurance"] }
     ]
   },
 
@@ -111,10 +111,10 @@ export const gymConfig = {
     title: "Inside IronCore Fitness",
     subtitle: "State-of-the-art equipment and spaces.",
     items: [
-      { id: 1, title: "Cardio Section", category: "Equipment", image: "https://loremflickr.com/800/600/cardio,workout?lock=58" },
-      { id: 2, title: "Free Weights Area", category: "Equipment", image: "https://loremflickr.com/800/600/gym,weights?lock=59" },
-      { id: 3, title: "Strength Machines", category: "Equipment", image: "https://loremflickr.com/800/600/weightlifting?lock=60" },
-      { id: 4, title: "Functional Training Zone", category: "Facility", image: "https://loremflickr.com/800/600/fitness?lock=61" }
+      { id: 1, title: "Cardio Section", category: "Equipment", image: "/images/gym/trainer-1.jpg" },
+      { id: 2, title: "Free Weights Area", category: "Equipment", image: "/images/gym/trainer-2.jpg" },
+      { id: 3, title: "Strength Machines", category: "Equipment", image: "/images/gym/trainer-3.jpg" },
+      { id: 4, title: "Functional Training Zone", category: "Facility", image: "/images/gym/trainer-4.jpg" }
     ]
   },
 
@@ -123,9 +123,9 @@ export const gymConfig = {
     title: "What Our Members Say",
     subtitle: "Real feedback from our fitness community.",
     items: [
-      { id: 1, name: "Vikram Sharma", role: "Member", rating: 5, quote: "Great gym with good equipment and supportive trainers.", avatar: "https://loremflickr.com/800/600/indian,man,face?lock=62", verified: true, treatment: "Standard Plan" },
-      { id: 2, name: "Anjali Gupta", role: "Member", rating: 5, quote: "The trainers actually guide you instead of just giving you a workout.", avatar: "https://loremflickr.com/800/600/indian,woman,face?lock=63", verified: true, treatment: "Premium Plan" },
-      { id: 3, name: "Karan Patel", role: "Member", rating: 5, quote: "Good atmosphere, clean equipment and reasonable membership fees.", avatar: "https://loremflickr.com/800/600/indian,man,face?lock=64", verified: true, treatment: "Basic Plan" }
+      { id: 1, name: "Vikram Sharma", role: "Member", rating: 5, quote: "Great gym with good equipment and supportive trainers.", avatar: "/images/gym/about-main.jpg", verified: true, treatment: "Standard Plan" },
+      { id: 2, name: "Anjali Gupta", role: "Member", rating: 5, quote: "The trainers actually guide you instead of just giving you a workout.", avatar: "/images/gym/about-main.jpg", verified: true, treatment: "Premium Plan" },
+      { id: 3, name: "Karan Patel", role: "Member", rating: 5, quote: "Good atmosphere, clean equipment and reasonable membership fees.", avatar: "/images/gym/about-main.jpg", verified: true, treatment: "Basic Plan" }
     ]
   },
 

@@ -10,7 +10,7 @@ export const siteConfig = {
     defaultTitle: "Aura Aesthetic & Medical Spa Clinic | Premium Skin Care & Wellness",
     defaultDescription: "Experience premier medical aesthetic procedures, laser skin resurfacing, anti-aging therapies, and IV wellness drips administered by board-certified physicians.",
     keywords: "medical spa, laser treatment, skin rejuvenation, hydrafacial, botox, clinic, wellness drips",
-    ogImage: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80",
+    ogImage: "/images/clinic/hero.jpg",
     twitterHandle: "@AuraWellnessClinic"
   },
 

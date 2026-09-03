@@ -50,7 +50,7 @@ export const salonConfig = {
     description: "Get 15% OFF on your first visit. Book your appointment today and experience premium grooming at an affordable price.",
     ctaPrimary: { text: "Book an Appointment", href: "#contact", icon: "Calendar" },
     ctaSecondary: { text: "View Services", href: "#services", icon: "Sparkles" },
-    image: "https://loremflickr.com/800/600/salon,beauty?lock=27",
+    image: "/images/salon/hero.jpg",
     highlights: ["Experienced Professionals", "Hygienic & Clean Environment", "Quality Beauty Products"]
   },
 
@@ -62,8 +62,8 @@ export const salonConfig = {
     experienceYears: "5+",
     doctorsCount: "10+", 
     proceduresDone: "5,000+", 
-    imageMain: "https://loremflickr.com/800/600/haircut,salon?lock=28",
-    imageSecondary: "https://loremflickr.com/800/600/makeup,beauty?lock=29",
+    imageMain: "/images/salon/about-main.jpg",
+    imageSecondary: "/images/salon/about-secondary.jpg",
     featuresList: ["Experienced Professionals", "Hygienic & Clean Environment", "Quality Beauty Products", "Affordable Pricing", "Personalized Consultation", "Easy Appointment Booking"]
   },
 
@@ -72,16 +72,16 @@ export const salonConfig = {
     title: "Premium Grooming & Beauty",
     subtitle: "Affordable luxury for men and women.",
     items: [
-      { id: "s1", category: "Hair", title: "Haircut & Styling", shortDescription: "Expert haircuts and styling for all hair types.", fullDescription: "Expert haircuts and styling for all hair types.", duration: "30 Mins", price: "Starting from ₹299", popular: true, icon: "Scissors", image: "https://loremflickr.com/800/600/haircut?lock=30", features: ["Consultation", "Hair Wash", "Styling"] },
-      { id: "s2", category: "Hair", title: "Hair Spa", shortDescription: "Rejuvenating hair spa treatments.", fullDescription: "Rejuvenating hair spa treatments.", duration: "60 Mins", price: "Starting from ₹699", popular: false, icon: "Sparkles", image: "https://loremflickr.com/800/600/hairspa?lock=31", features: ["Deep Conditioning", "Head Massage", "Steam"] },
-      { id: "s3", category: "Hair", title: "Hair Colour", shortDescription: "Global color, highlights, and touch-ups.", fullDescription: "Global color, highlights, and touch-ups.", duration: "90 Mins", price: "Starting from ₹999", popular: true, icon: "Palette", image: "https://loremflickr.com/800/600/haircolor?lock=32", features: ["Ammonia-free Options", "Expert Advice", "Color Protection"] },
-      { id: "s4", category: "Skin", title: "Facial & Cleanup", shortDescription: "Refreshing facials for glowing skin.", fullDescription: "Refreshing facials for glowing skin.", duration: "45 Mins", price: "Starting from ₹499", popular: true, icon: "Smile", image: "https://loremflickr.com/800/600/facial,skincare?lock=33", features: ["Skin Analysis", "Deep Cleansing", "Hydration"] },
-      { id: "s5", category: "Makeup", title: "Bridal Makeup", shortDescription: "Flawless bridal makeup for your special day.", fullDescription: "Flawless bridal makeup for your special day.", duration: "180 Mins", price: "Starting from ₹5,999", popular: false, icon: "Star", image: "https://loremflickr.com/800/600/makeup,beauty?lock=34", features: ["HD Makeup", "Hair Styling", "Draping"] },
-      { id: "s6", category: "Makeup", title: "Party Makeup", shortDescription: "Elegant makeup for parties and events.", fullDescription: "Elegant makeup for parties and events.", duration: "60 Mins", price: "Starting from ₹1,999", popular: false, icon: "Camera", image: "https://loremflickr.com/800/600/partymakeup?lock=35", features: ["Base Setup", "Eye Makeup", "Setting"] },
-      { id: "s7", category: "Body", title: "Manicure & Pedicure", shortDescription: "Complete hand and foot care.", fullDescription: "Complete hand and foot care.", duration: "45 Mins", price: "Starting from ₹599", popular: true, icon: "Activity", image: "https://loremflickr.com/800/600/haircolor?lock=36", features: ["Nail Shaping", "Cuticle Care", "Massage"] },
-      { id: "s8", category: "Men", title: "Beard Styling", shortDescription: "Precision beard trimming and styling.", fullDescription: "Precision beard trimming and styling.", duration: "20 Mins", price: "Starting from ₹199", popular: true, icon: "Scissors", image: "https://loremflickr.com/800/600/beard,trim?lock=37", features: ["Trimming", "Shaping", "Beard Wash"] },
-      { id: "s9", category: "Men", title: "Men's Grooming Package", shortDescription: "Complete grooming package for men.", fullDescription: "Complete grooming package for men.", duration: "60 Mins", price: "Starting from ₹799", popular: false, icon: "User", image: "https://loremflickr.com/800/600/mensgrooming?lock=38", features: ["Haircut", "Beard Styling", "Cleanup"] },
-      { id: "s10", category: "Women", title: "Women's Beauty Package", shortDescription: "Comprehensive beauty package for women.", fullDescription: "Comprehensive beauty package for women.", duration: "90 Mins", price: "Starting from ₹1,499", popular: false, icon: "Heart", image: "https://loremflickr.com/800/600/makeup,beauty?lock=39", features: ["Facial", "Mani-Pedi", "Threading"] }
+      { id: "s1", category: "Hair", title: "Haircut & Styling", shortDescription: "Expert haircuts and styling for all hair types.", fullDescription: "Expert haircuts and styling for all hair types.", duration: "30 Mins", price: "Starting from ₹299", popular: true, icon: "Scissors", image: "/images/salon/treatment-1.jpg", features: ["Consultation", "Hair Wash", "Styling"] },
+      { id: "s2", category: "Hair", title: "Hair Spa", shortDescription: "Rejuvenating hair spa treatments.", fullDescription: "Rejuvenating hair spa treatments.", duration: "60 Mins", price: "Starting from ₹699", popular: false, icon: "Sparkles", image: "/images/salon/treatment-2.jpg", features: ["Deep Conditioning", "Head Massage", "Steam"] },
+      { id: "s3", category: "Hair", title: "Hair Colour", shortDescription: "Global color, highlights, and touch-ups.", fullDescription: "Global color, highlights, and touch-ups.", duration: "90 Mins", price: "Starting from ₹999", popular: true, icon: "Palette", image: "/images/salon/treatment-3.jpg", features: ["Ammonia-free Options", "Expert Advice", "Color Protection"] },
+      { id: "s4", category: "Skin", title: "Facial & Cleanup", shortDescription: "Refreshing facials for glowing skin.", fullDescription: "Refreshing facials for glowing skin.", duration: "45 Mins", price: "Starting from ₹499", popular: true, icon: "Smile", image: "/images/salon/treatment-4.jpg", features: ["Skin Analysis", "Deep Cleansing", "Hydration"] },
+      { id: "s5", category: "Makeup", title: "Bridal Makeup", shortDescription: "Flawless bridal makeup for your special day.", fullDescription: "Flawless bridal makeup for your special day.", duration: "180 Mins", price: "Starting from ₹5,999", popular: false, icon: "Star", image: "/images/salon/treatment-1.jpg", features: ["HD Makeup", "Hair Styling", "Draping"] },
+      { id: "s6", category: "Makeup", title: "Party Makeup", shortDescription: "Elegant makeup for parties and events.", fullDescription: "Elegant makeup for parties and events.", duration: "60 Mins", price: "Starting from ₹1,999", popular: false, icon: "Camera", image: "/images/salon/treatment-2.jpg", features: ["Base Setup", "Eye Makeup", "Setting"] },
+      { id: "s7", category: "Body", title: "Manicure & Pedicure", shortDescription: "Complete hand and foot care.", fullDescription: "Complete hand and foot care.", duration: "45 Mins", price: "Starting from ₹599", popular: true, icon: "Activity", image: "/images/salon/treatment-3.jpg", features: ["Nail Shaping", "Cuticle Care", "Massage"] },
+      { id: "s8", category: "Men", title: "Beard Styling", shortDescription: "Precision beard trimming and styling.", fullDescription: "Precision beard trimming and styling.", duration: "20 Mins", price: "Starting from ₹199", popular: true, icon: "Scissors", image: "/images/salon/treatment-4.jpg", features: ["Trimming", "Shaping", "Beard Wash"] },
+      { id: "s9", category: "Men", title: "Men's Grooming Package", shortDescription: "Complete grooming package for men.", fullDescription: "Complete grooming package for men.", duration: "60 Mins", price: "Starting from ₹799", popular: false, icon: "User", image: "/images/salon/treatment-1.jpg", features: ["Haircut", "Beard Styling", "Cleanup"] },
+      { id: "s10", category: "Women", title: "Women's Beauty Package", shortDescription: "Comprehensive beauty package for women.", fullDescription: "Comprehensive beauty package for women.", duration: "90 Mins", price: "Starting from ₹1,499", popular: false, icon: "Heart", image: "/images/salon/treatment-2.jpg", features: ["Facial", "Mani-Pedi", "Threading"] }
     ]
   },
 
@@ -113,10 +113,10 @@ export const salonConfig = {
     title: "A Glimpse Inside",
     subtitle: "Clean, comfortable, and modern.",
     items: [
-      { id: 1, title: "Styling Station", category: "Interior", image: "https://loremflickr.com/800/600/salon,beauty?lock=40" },
-      { id: 2, title: "Hair Wash Area", category: "Facility", image: "https://loremflickr.com/800/600/haircut,salon?lock=41" },
-      { id: 3, title: "Makeup Room", category: "Interior", image: "https://loremflickr.com/800/600/partymakeup?lock=42" },
-      { id: 4, title: "Premium Products", category: "Products", image: "https://loremflickr.com/800/600/facial,skincare?lock=43" }
+      { id: 1, title: "Styling Station", category: "Interior", image: "/images/salon/treatment-3.jpg" },
+      { id: 2, title: "Hair Wash Area", category: "Facility", image: "/images/salon/treatment-4.jpg" },
+      { id: 3, title: "Makeup Room", category: "Interior", image: "/images/salon/treatment-1.jpg" },
+      { id: 4, title: "Premium Products", category: "Products", image: "/images/salon/treatment-2.jpg" }
     ]
   },
 
@@ -125,9 +125,9 @@ export const salonConfig = {
     title: "What Our Clients Say",
     subtitle: "Trusted by hundreds in Lucknow.",
     items: [
-      { id: 1, name: "Sneha Verma", role: "Regular Client", rating: 5, quote: "The staff was professional and the service was excellent. Highly recommended.", avatar: "https://loremflickr.com/800/600/indian,woman,face?lock=44", verified: true, treatment: "Hair Spa" },
-      { id: 2, name: "Rahul Singh", role: "Client", rating: 5, quote: "Very clean salon with reasonable pricing and friendly staff.", avatar: "https://loremflickr.com/800/600/indian,man,face?lock=45", verified: true, treatment: "Men's Grooming" },
-      { id: 3, name: "Priya Sharma", role: "Client", rating: 5, quote: "Loved my haircut and styling. Will definitely visit again.", avatar: "https://loremflickr.com/800/600/indian,girl,face?lock=46", verified: true, treatment: "Haircut & Styling" }
+      { id: 1, name: "Sneha Verma", role: "Regular Client", rating: 5, quote: "The staff was professional and the service was excellent. Highly recommended.", avatar: "/images/salon/about-main.jpg", verified: true, treatment: "Hair Spa" },
+      { id: 2, name: "Rahul Singh", role: "Client", rating: 5, quote: "Very clean salon with reasonable pricing and friendly staff.", avatar: "/images/salon/about-main.jpg", verified: true, treatment: "Men's Grooming" },
+      { id: 3, name: "Priya Sharma", role: "Client", rating: 5, quote: "Loved my haircut and styling. Will definitely visit again.", avatar: "/images/salon/about-main.jpg", verified: true, treatment: "Haircut & Styling" }
     ]
   },
 

@@ -51,7 +51,7 @@ export const realEstateConfig = {
     subtitle: "Discover thoughtfully selected residential and commercial properties with local expertise and guidance from search to transaction.",
     ctaPrimary: { text: "Explore Properties", href: "#featured", icon: "Search" },
     ctaSecondary: { text: "Schedule a Site Visit", href: "#contact", icon: "Calendar" },
-    image: "https://loremflickr.com/800/600/architecture,mansion?lock=86",
+    image: "/images/realestate/hero.jpg",
     highlights: ["Local Market Knowledge", "Curated Listings", "End-to-End Assistance"],
     searchEnabled: true,
     searchButtonText: "Search Properties",
@@ -83,8 +83,8 @@ export const realEstateConfig = {
     experienceYears: "15+",
     doctorsCount: "20+", 
     proceduresDone: "1200+",
-    imageMain: "https://loremflickr.com/800/600/interior,living?lock=87",
-    imageSecondary: "https://loremflickr.com/800/600/architecture,modern?lock=88",
+    imageMain: "/images/realestate/about-main.jpg",
+    imageSecondary: "/images/realestate/about-secondary.jpg",
     featuresList: ["Local Expertise", "Premium Properties", "Transparent Process", "Personalised Service"]
   },
 
@@ -112,28 +112,28 @@ export const realEstateConfig = {
         price: "₹1.35 Cr*",
         specs: "3 BHK Apartment • 1,485 sq. ft. • Ready to Move",
         location: "Baner, Pune",
-        image: "https://loremflickr.com/800/600/apartment,modern?lock=89"
+        image: "/images/realestate/prop-1.jpg"
       },
       {
         title: "Greenview Heights",
         price: "₹98 Lakh*",
         specs: "2 BHK Apartment • 1,120 sq. ft. • Under Development",
         location: "Whitefield, Bengaluru",
-        image: "https://loremflickr.com/800/600/apartment,exterior?lock=90"
+        image: "/images/realestate/prop-2.jpg"
       },
       {
         title: "The Courtyard Villa",
         price: "₹2.45 Cr*",
         specs: "4 BHK Villa • 2,850 sq. ft. • Ready to Move",
         location: "Wakad, Pune",
-        image: "https://loremflickr.com/800/600/architecture,mansion?lock=91"
+        image: "/images/realestate/prop-3.jpg"
       },
       {
         title: "Central Business Square",
         price: "₹1.10 Cr*",
         specs: "Commercial Office • 1,650 sq. ft. • Ready to Occupy",
         location: "Hinjewadi, Pune",
-        image: "https://loremflickr.com/800/600/office,building?lock=92"
+        image: "/images/realestate/prop-4.jpg"
       }
     ]
   },
@@ -188,10 +188,10 @@ export const realEstateConfig = {
     title: "Explore Popular Locations",
     subtitle: "Sample property markets across India.",
     items: [
-      { id: 1, title: "Pune", category: "Maharashtra", image: "https://loremflickr.com/800/600/city,pune?lock=93" },
-      { id: 2, title: "Mumbai", category: "Maharashtra", image: "https://loremflickr.com/800/600/city,mumbai?lock=94" },
-      { id: 3, title: "Bengaluru", category: "Karnataka", image: "https://loremflickr.com/800/600/city,pune?lock=95" },
-      { id: 4, title: "Delhi NCR", category: "North India", image: "https://loremflickr.com/800/600/city,delhi?lock=96" }
+      { id: 1, title: "Pune", category: "Maharashtra", image: "/images/realestate/prop-5.jpg" },
+      { id: 2, title: "Mumbai", category: "Maharashtra", image: "/images/realestate/prop-6.jpg" },
+      { id: 3, title: "Bengaluru", category: "Karnataka", image: "/images/realestate/prop-1.jpg" },
+      { id: 4, title: "Delhi NCR", category: "North India", image: "/images/realestate/prop-2.jpg" }
     ]
   },
 
@@ -200,9 +200,9 @@ export const realEstateConfig = {
     title: "Meet Our Property Advisors",
     subtitle: "Experienced professionals guiding your property journey.",
     items: [
-      { name: "Rohan Mehta", role: "Senior Property Advisor", specialty: "Residential Properties — Pune", bio: "10+ Years Experience. Focuses on finding the perfect residential match for families and professionals.", image: "https://loremflickr.com/800/600/indian,man,business?lock=97" },
-      { name: "Ananya Kapoor", role: "Property Consultant", specialty: "Premium Residential & Investment Properties", bio: "8+ Years Experience. Specializes in high-yield investments and luxury living spaces.", image: "https://loremflickr.com/800/600/indian,portrait?lock=98" },
-      { name: "Vivek Sharma", role: "Commercial Property Advisor", specialty: "Office & Retail Spaces", bio: "12+ Years Experience. Helps businesses find the right commercial spaces for growth.", image: "https://loremflickr.com/800/600/indian,man,face?lock=99" }
+      { name: "Rohan Mehta", role: "Senior Property Advisor", specialty: "Residential Properties — Pune", bio: "10+ Years Experience. Focuses on finding the perfect residential match for families and professionals.", image: "/images/realestate/prop-3.jpg" },
+      { name: "Ananya Kapoor", role: "Property Consultant", specialty: "Premium Residential & Investment Properties", bio: "8+ Years Experience. Specializes in high-yield investments and luxury living spaces.", image: "/images/realestate/prop-4.jpg" },
+      { name: "Vivek Sharma", role: "Commercial Property Advisor", specialty: "Office & Retail Spaces", bio: "12+ Years Experience. Helps businesses find the right commercial spaces for growth.", image: "/images/realestate/prop-5.jpg" }
     ]
   },
 
@@ -238,12 +238,12 @@ export const realEstateConfig = {
     title: "Explore Our Properties",
     subtitle: "A glimpse into the properties we represent.",
     items: [
-      { id: 1, title: "Living Room", category: "Interior", image: "https://loremflickr.com/800/600/interior,living?lock=100" },
-      { id: 2, title: "Bedroom", category: "Interior", image: "https://loremflickr.com/800/600/apartment,modern?lock=101" },
-      { id: 3, title: "Kitchen", category: "Interior", image: "https://loremflickr.com/800/600/interior,kitchen?lock=102" },
-      { id: 4, title: "Exterior", category: "Exterior", image: "https://loremflickr.com/800/600/architecture,modern?lock=103" },
-      { id: 5, title: "Clubhouse", category: "Amenities", image: "https://loremflickr.com/800/600/interior,clubhouse?lock=104" },
-      { id: 6, title: "Balcony View", category: "Exterior", image: "https://loremflickr.com/800/600/office,building?lock=105" }
+      { id: 1, title: "Living Room", category: "Interior", image: "/images/realestate/prop-6.jpg" },
+      { id: 2, title: "Bedroom", category: "Interior", image: "/images/realestate/prop-1.jpg" },
+      { id: 3, title: "Kitchen", category: "Interior", image: "/images/realestate/prop-2.jpg" },
+      { id: 4, title: "Exterior", category: "Exterior", image: "/images/realestate/prop-3.jpg" },
+      { id: 5, title: "Clubhouse", category: "Amenities", image: "/images/realestate/prop-4.jpg" },
+      { id: 6, title: "Balcony View", category: "Exterior", image: "/images/realestate/prop-5.jpg" }
     ]
   },
 
@@ -252,8 +252,8 @@ export const realEstateConfig = {
     title: "What Our Clients Say",
     subtitle: "Demo testimonials showcasing client experiences.",
     items: [
-      { id: 1, name: "Amit Patel", role: "Sample Homebuyer", rating: 5, quote: "The team understood our location and budget requirements and helped us shortlist properties without wasting time.", avatar: "https://loremflickr.com/800/600/indian,man,business?lock=106", verified: true, treatment: "Property Purchase" },
-      { id: 2, name: "Sneha Rao", role: "Sample Client", rating: 5, quote: "Communication was clear throughout the property search and site visit process.", avatar: "https://loremflickr.com/800/600/indian,woman,face?lock=107", verified: true, treatment: "Property Rental" }
+      { id: 1, name: "Amit Patel", role: "Sample Homebuyer", rating: 5, quote: "The team understood our location and budget requirements and helped us shortlist properties without wasting time.", avatar: "/images/realestate/about-main.jpg", verified: true, treatment: "Property Purchase" },
+      { id: 2, name: "Sneha Rao", role: "Sample Client", rating: 5, quote: "Communication was clear throughout the property search and site visit process.", avatar: "/images/realestate/about-main.jpg", verified: true, treatment: "Property Rental" }
     ]
   },
 

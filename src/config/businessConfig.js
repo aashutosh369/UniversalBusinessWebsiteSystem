@@ -66,7 +66,7 @@ export const businessConfig = {
       href: "#services",
       icon: "ArrowRight"
     },
-    image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/clinic/hero.jpg",
     highlights: [
       "100% Board Certified Physicians",
       "FDA-Cleared German Technology",
@@ -83,8 +83,8 @@ export const businessConfig = {
     experienceYears: "12+",
     doctorsCount: "14+",
     proceduresDone: "25,000+",
-    imageMain: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80",
-    imageSecondary: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80",
+    imageMain: "/images/clinic/about-main.jpg",
+    imageSecondary: "/images/clinic/about-secondary.jpg",
     featuresList: [
       "Private VIP Consultation Suites",
       "Doctor-Curated Individualized Protocols",

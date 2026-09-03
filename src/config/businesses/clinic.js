@@ -51,7 +51,7 @@ export const clinicConfig = {
     subtitle: "Experience advanced FDA-cleared laser skin resurfacing, medical hydra-facials, and personalized anti-aging therapies delivered by board-certified physicians.",
     ctaPrimary: { text: "Book Consultation", href: "#contact", icon: "Calendar" },
     ctaSecondary: { text: "Explore Treatments", href: "#services", icon: "ArrowRight" },
-    image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80",
+    image: "/images/clinic/hero.jpg",
     highlights: ["100% Board Certified Physicians", "FDA-Cleared German Tech", "Zero Downtime Therapies"]
   },
 
@@ -79,8 +79,8 @@ export const clinicConfig = {
     experienceYears: "12+",
     doctorsCount: "14+",
     proceduresDone: "25,000+",
-    imageMain: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80",
-    imageSecondary: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80",
+    imageMain: "/images/clinic/about-main.jpg",
+    imageSecondary: "/images/clinic/about-secondary.jpg",
     featuresList: [
       "Private VIP Consultation Suites",
       "Doctor-Curated Individualized Protocols",
@@ -104,7 +104,7 @@ export const clinicConfig = {
         price: "$299",
         popular: true,
         icon: "Sparkles",
-        image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80",
+        image: "/images/clinic/doctor-1.jpg",
         features: ["FDA Cleared Non-invasive Tech", "Painless & No Downtime", "Noticeable Glow after 1st Session"]
       },
       {
@@ -117,7 +117,7 @@ export const clinicConfig = {
         price: "$199",
         popular: true,
         icon: "Droplets",
-        image: "https://images.unsplash.com/photo-1512290900673-7002fa016352?auto=format&fit=crop&w=800&q=80",
+        image: "/images/clinic/doctor-2.jpg",
         features: ["Deep Pore Vacuum Extraction", "Peptide & Vitamin C Boosters", "Instant Radiant Hydration"]
       },
       {
@@ -130,7 +130,7 @@ export const clinicConfig = {
         price: "$399",
         popular: false,
         icon: "HeartPulse",
-        image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=800&q=80",
+        image: "/images/clinic/doctor-3.jpg",
         features: ["Board Certified Doctors", "Natural-looking Ergonomic Results", "Long Lasting 8-12 Months Effect"]
       }
     ]
@@ -151,9 +151,9 @@ export const clinicConfig = {
     title: "Inside Aura Sanctuary",
     subtitle: "Witness our private clinical suites and patient outcomes.",
     items: [
-      { id: 1, title: "Luxury VIP Consultation Suite", category: "Facility", image: "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" },
-      { id: 2, title: "Pico Laser Session", category: "Treatments", image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80" },
-      { id: 3, title: "Medical Hydra-Facial", category: "Treatments", image: "https://images.unsplash.com/photo-1512290900673-7002fa016352?auto=format&fit=crop&w=800&q=80" }
+      { id: 1, title: "Luxury VIP Consultation Suite", category: "Facility", image: "/images/clinic/doctor-1.jpg" },
+      { id: 2, title: "Pico Laser Session", category: "Treatments", image: "/images/clinic/doctor-2.jpg" },
+      { id: 3, title: "Medical Hydra-Facial", category: "Treatments", image: "/images/clinic/doctor-3.jpg" }
     ]
   },
 
@@ -168,7 +168,7 @@ export const clinicConfig = {
         role: "Senior Architect",
         rating: 5,
         quote: "Aura Clinic transformed my skin completely before my design summit! The Laser Rejuvenation yielded flawless glass skin.",
-        avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+        avatar: "/images/clinic/about-main.jpg",
         verified: true,
         treatment: "Laser Rejuvenation"
       },
@@ -178,7 +178,7 @@ export const clinicConfig = {
         role: "Fashion Director",
         rating: 5,
         quote: "The doctors at Aura are true sculptors. The jawline Botox and dermal fillers look completely natural!",
-        avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80",
+        avatar: "/images/clinic/about-main.jpg",
         verified: true,
         treatment: "Dermal Fillers"
       }
