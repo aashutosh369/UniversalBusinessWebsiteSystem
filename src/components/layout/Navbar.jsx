@@ -36,9 +36,17 @@ export const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#hero" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-[var(--color-primary)] text-white flex items-center justify-center shadow-md group-hover:scale-105 transition-transform duration-300">
-              <DynamicIcon name={businessConfig.logo.icon} className="w-5 h-5" />
-            </div>
+            {businessConfig.logo.image ? (
+              <img
+                src={businessConfig.logo.image}
+                alt={businessConfig.name}
+                className="h-10 sm:h-12 w-auto object-contain rounded-lg shadow-sm group-hover:scale-105 transition-transform duration-300"
+              />
+            ) : (
+              <div className="w-10 h-10 rounded-xl bg-[var(--color-primary)] text-white flex items-center justify-center shadow-md group-hover:scale-105 transition-transform duration-300">
+                <DynamicIcon name={businessConfig.logo.icon} className="w-5 h-5" />
+              </div>
+            )}
             <div>
               <span className="block font-heading font-extrabold text-lg sm:text-xl tracking-tight text-[var(--color-text-primary)] leading-none">
                 {businessConfig.logo.text}

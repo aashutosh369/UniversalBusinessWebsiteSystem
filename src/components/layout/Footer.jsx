@@ -16,9 +16,17 @@ export const Footer = () => {
           {/* Brand Info */}
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-[var(--color-primary)] text-white flex items-center justify-center shadow-lg">
-                <DynamicIcon name={businessConfig.logo.icon} className="w-5 h-5" />
-              </div>
+              {businessConfig.logo.image ? (
+                <img
+                  src={businessConfig.logo.image}
+                  alt={businessConfig.name}
+                  className="h-10 sm:h-12 w-auto object-contain rounded-lg shadow-md"
+                />
+              ) : (
+                <div className="w-10 h-10 rounded-xl bg-[var(--color-primary)] text-white flex items-center justify-center shadow-lg">
+                  <DynamicIcon name={businessConfig.logo.icon} className="w-5 h-5" />
+                </div>
+              )}
               <div>
                 <span className="block font-heading font-extrabold text-xl text-white tracking-tight leading-none">
                   {businessConfig.logo.text}

@@ -1,285 +1,286 @@
 export const realEstateConfig = {
   id: "realEstate",
-  name: "Nestora Realty",
-  shortName: "Nestora",
-  businessType: "Real Estate Agency",
-  tagline: "FIND YOUR PLACE. BUILD YOUR FUTURE.",
-  badge: "Premium Real Estate Advisory",
+  name: "Flats & Beyond",
+  shortName: "Flats & Beyond",
+  businessType: "Luxury Real Estate & Housing Advisory",
+  tagline: "WHERE DREAMS FIND AN ADDRESS.",
+  badge: "Premier Real Estate & Property Advisory",
 
   theme: {
     id: "theme-realestate",
     colors: {
-      primary: { DEFAULT: '#1e293b', light: '#334155', dark: '#0f172a', foreground: '#ffffff' },
-      secondary: { DEFAULT: '#f8fafc', light: '#ffffff', foreground: '#0f172a' },
-      accent: { DEFAULT: '#d97706', light: '#f59e0b', foreground: '#ffffff' },
-      surface: { DEFAULT: '#f1f5f9', muted: '#f8fafc', card: '#ffffff', glass: 'rgba(255, 255, 255, 0.95)' },
-      text: { primary: '#0f172a', secondary: '#475569' },
-      border: 'rgba(30, 41, 59, 0.08)'
+      primary: { DEFAULT: '#d97706', light: '#f59e0b', dark: '#b45309', foreground: '#ffffff' },
+      secondary: { DEFAULT: '#0f172a', light: '#1e293b', foreground: '#ffffff' },
+      accent: { DEFAULT: '#eab308', light: '#fde047', foreground: '#0f172a' },
+      surface: { DEFAULT: '#0b0f19', muted: '#111827', card: '#1e293b', glass: 'rgba(30, 41, 59, 0.95)' },
+      text: { primary: '#f8fafc', secondary: '#94a3b8' },
+      border: 'rgba(217, 119, 6, 0.20)'
     },
     typography: { heading: "'Playfair Display', serif", body: "'Inter', sans-serif" },
-    radius: { brand: '0rem', card: '0.25rem', btn: '0rem' },
-    glass: { blur: '8px', border: 'rgba(30, 41, 59, 0.08)' }
+    radius: { brand: '0.5rem', card: '0.75rem', btn: '0.5rem' },
+    glass: { blur: '12px', border: 'rgba(217, 119, 6, 0.20)' }
   },
 
-  logo: { icon: "Home", text: "NESTORA", subtext: "REALTY" },
+  logo: {
+    image: "/images/realestate/logo.jpg",
+    icon: "Building",
+    text: "FLATS & BEYOND",
+    subtext: "WHERE DREAMS FIND AN ADDRESS"
+  },
 
   contact: {
-    phone: "+91 98765 43210",
-    email: "hello@nestora-demo.in",
-    whatsapp: "919876543210",
-    whatsappMessage: "Hello Nestora Realty, I would like to enquire about a property.",
-    address: "5th Floor, Meridian Business Centre, Baner Road, Pune, Maharashtra",
+    phone: "+91 99117 86111",
+    email: "tanuj.arora@flatsandbeyond.in",
+    whatsapp: "919911786111",
+    whatsappMessage: "Hello Tanuj Arora Sir, I visited Flats & Beyond website and would like to enquire about luxury flats and property booking.",
+    address: "Prime Commercial Towers, Golf Course Road, Gurugram & Delhi NCR",
     operatingHours: [
-      { days: "Monday – Saturday", hours: "9:30 AM – 7:00 PM" },
-      { days: "Sunday", hours: "By Appointment" }
+      { days: "Monday – Sunday", hours: "9:00 AM – 8:30 PM (7 Days Site Visits)" }
     ],
-    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.355325852955!2d73.7844199!3d18.5580644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bec7071e21b7%3A0xc078426d83a1f11a!2sBaner%20Road%2C%20Pune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
-    regulatory: { reraEnabled: true, registrationNumber: "Demo: RERA-XXX-00000", disclaimer: "This is a demo configuration. RERA number is fictitious." }
+    mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.472718914118!2d77.09441631504332!3d28.45931298315752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18d4076326e5%3A0xb3a8080f0814a0f3!2sGolf%20Course%20Rd%2C%20Gurugram%2C%20Haryana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+    regulatory: { reraEnabled: true, registrationNumber: "HRERA-GGM-2024-FB99117", disclaimer: "RERA Registered Channel Partner & Property Advisory." }
   },
   
   mobileActions: {
     call: true,
     whatsapp: true,
-    primaryAction: { label: "Site Visit", target: "#contact" }
+    primaryAction: { label: "Book Site Visit", target: "#contact" }
   },
   
-  socialLinks: { instagram: "https://instagram.com", facebook: "https://facebook.com", twitter: "https://twitter.com" },
+  socialLinks: { instagram: "https://instagram.com", facebook: "https://facebook.com", twitter: "https://twitter.com", linkedin: "https://linkedin.com" },
 
   hero: {
-    badge: "PREMIUM REAL ESTATE ADVISORY",
-    title: "Find a Place Worth Calling Home.",
-    subtitle: "Discover thoughtfully selected residential and commercial properties with local expertise and guidance from search to transaction.",
-    ctaPrimary: { text: "Explore Properties", href: "#featured", icon: "Search" },
-    ctaSecondary: { text: "Schedule a Site Visit", href: "#contact", icon: "Calendar" },
+    badge: "✨ PREMIER HOUSING & REAL ESTATE ADVISORY",
+    title: "Where Dreams Find An Address.",
+    subtitle: "Discover handpicked 2, 3 & 4 BHK Luxury Flats, Penthouses, Builder Floors & High-Return Investment Properties across Gurugram, Delhi NCR & Noida.",
+    ctaPrimary: { text: "Explore Luxury Properties", href: "#featured", icon: "Search" },
+    ctaSecondary: { text: "Book Private Site Visit", href: "#contact", icon: "Calendar" },
     image: "/images/realestate/hero.jpg",
-    highlights: ["Local Market Knowledge", "Curated Listings", "End-to-End Assistance"],
+    highlights: ["Direct Founder Guidance: Tanuj Arora (+91 99117 86111)", "100% Verified Legal Titles & RERA Compliant", "End-to-End Home Loan & Deal Closure Support"],
     searchEnabled: true,
-    searchButtonText: "Search Properties",
+    searchButtonText: "Find My Flat",
     searchFields: [
-      { label: "Looking For", options: ["Buy", "Rent"] },
-      { label: "Property Type", options: ["Apartment", "Villa", "Plot", "Office", "Retail", "Independent House"] },
-      { label: "Location", options: ["Pune", "Mumbai", "Bengaluru", "Noida", "Gurugram", "Hyderabad"] },
-      { label: "Budget", options: ["₹50 Lakh", "₹1 Crore", "₹2 Crore", "₹3 Crore+"] }
+      { label: "Looking For", options: ["Buy Flat", "Rent / Lease", "Investment"] },
+      { label: "Property Type", options: ["3 BHK Luxury Flat", "2 BHK Premium Flat", "4 BHK Penthouse", "Independent Builder Floor", "Commercial Shop"] },
+      { label: "Prime Location", options: ["Golf Course Road", "Dwarka Expressway", "Southern Peripheral Rd", "Noida Sector 150", "South Delhi"] },
+      { label: "Budget Range", options: ["₹75 Lakh - ₹1.2 Cr", "₹1.2 Cr - ₹2.5 Cr", "₹2.5 Cr - ₹5 Cr", "₹5 Cr+ Luxury"] }
     ]
   },
 
   trustStats: {
-    badge: "SAMPLE METRICS",
-    title: "Our Track Record",
-    subtitle: "These are fictional demo metrics representing our agency experience.",
+    badge: "PROVEN TRACK RECORD",
+    title: "Delivering Trust & Dream Addresses",
+    subtitle: "Helping families and investors secure prime properties with full transparency.",
     items: [
-      { id: 1, value: "500+", label: "Properties Showcased", icon: "Building" },
-      { id: 2, value: "1,200+", label: "Clients Assisted", icon: "Users" },
-      { id: 3, value: "15+", label: "Years of Experience", icon: "Award" },
-      { id: 4, value: "12", label: "Local Markets Covered", icon: "MapPin" }
+      { id: 1, value: "500+", label: "Happy Families Settled", icon: "Building" },
+      { id: 2, value: "₹250+ Cr", label: "Property Inventory Handled", icon: "Users" },
+      { id: 3, value: "100%", label: "Verified Legal Papers", icon: "Award" },
+      { id: 4, value: "10+ Yrs", label: "NCR Market Expertise", icon: "MapPin" }
     ]
   },
 
   about: {
-    badge: "ABOUT NESTORA",
-    title: "Real Estate Guidance Built Around Your Goals.",
-    subtitle: "Find Your Place. Build Your Future.",
-    description: "Buying, selling or renting a property is a significant decision. At Nestora Realty, we combine local market knowledge, property discovery and personalised guidance to help clients navigate the process with greater clarity.\n\nOur approach focuses on understanding what matters to each client — location, budget, property type, lifestyle and long-term requirements.",
-    experienceYears: "15+",
-    doctorsCount: "20+", 
-    proceduresDone: "1200+",
+    badge: "ABOUT FLATS & BEYOND",
+    title: "Your Premier Real Estate Advisory — Led by Tanuj Arora",
+    subtitle: "Where Dreams Find An Address.",
+    description: "Flats & Beyond is a premier real estate consultancy founded by Tanuj Arora with a singular mission: to help every homebuyer and investor discover their ideal property with zero stress, absolute transparency, and maximum value.\n\nWhether you are searching for an opulent 3 BHK family apartment, a signature penthouse, a modern builder floor, or high-yielding commercial space in Gurugram & Delhi NCR, Tanuj Arora and our team deliver personalized advisory from initial site visit to final key handover.",
+    experienceYears: "10+",
+    doctorsCount: "15+", 
+    proceduresDone: "500+",
     imageMain: "/images/realestate/about-main.jpg",
     imageSecondary: "/images/realestate/about-secondary.jpg",
-    featuresList: ["Local Expertise", "Premium Properties", "Transparent Process", "Personalised Service"]
+    featuresList: ["Personalized Advisory by Founder Tanuj Arora", "Direct Developer Deals & Zero Hidden Fees", "100% Legal Title & RERA Verification", "Free Luxury AC Cab for Site Visits"]
   },
 
   propertyTypesConfig: {
-    badge: "EXPLORE PROPERTIES",
-    title: "Find Your Perfect Match",
-    subtitle: "Discover a variety of property options tailored to your needs.",
+    badge: "EXPLORE PROPERTY TYPES",
+    title: "Tailored Living & Investment Options",
+    subtitle: "Choose from curated residential and commercial categories.",
     items: [
-      { id: 1, icon: "Building2", title: "Apartments", description: "Modern apartments for individuals, couples and families." },
-      { id: 2, icon: "Home", title: "Villas", description: "Spacious independent and gated-community villas." },
-      { id: 3, icon: "Key", title: "Independent Houses", description: "Homes offering greater privacy and flexibility." },
-      { id: 4, icon: "Map", title: "Plots", description: "Residential and selected development plots." },
-      { id: 5, icon: "Briefcase", title: "Commercial Offices", description: "Workspaces for businesses and professionals." },
-      { id: 6, icon: "ShoppingBag", title: "Retail Spaces", description: "Commercial spaces suitable for retail and service businesses." }
+      { id: 1, icon: "Building2", title: "Luxury 3 & 4 BHK Flats", description: "Spacious apartments in high-rise gated communities with clubhouses & pools." },
+      { id: 2, icon: "Home", title: "Independent Builder Floors", description: "Exclusive low-density living with private parking, lift & terrace rights." },
+      { id: 3, icon: "Key", title: "Penthouses & Villas", description: "Ultra-luxury sky villas offering panoramic city views and private plunge pools." },
+      { id: 4, icon: "Map", title: "Residential Plots", description: "Gated township plots in booming growth corridors for custom home building." },
+      { id: 5, icon: "Briefcase", title: "Commercial Offices", description: "Grade-A office spaces for corporates, startups, and high-yield investors." },
+      { id: 6, icon: "ShoppingBag", title: "Retail Shops & Food Courts", description: "High-footfall commercial spaces in prime shopping malls & high streets." }
     ]
   },
 
   featuredPropertiesConfig: {
-    badge: "FEATURED LISTINGS",
-    title: "Featured Properties",
-    subtitle: "Explore our handpicked selection of premium demo properties.",
+    badge: "HANDPICKED FEATURED DEALS",
+    title: "Exclusive Featured Listings",
+    subtitle: "Explore prime luxury residential options in Delhi NCR & Gurugram.",
     items: [
       {
-        title: "Skyline Residences",
-        price: "₹1.35 Cr*",
-        specs: "3 BHK Apartment • 1,485 sq. ft. • Ready to Move",
-        location: "Baner, Pune",
+        title: "The Grand Pavilion — 3 BHK Luxury Flat",
+        price: "₹1.65 Cr*",
+        specs: "3 BHK + Servant • 1,950 sq. ft. • Golf Course Extension",
+        location: "Gurugram, Haryana",
         image: "/images/realestate/prop-1.jpg"
       },
       {
-        title: "Greenview Heights",
-        price: "₹98 Lakh*",
-        specs: "2 BHK Apartment • 1,120 sq. ft. • Under Development",
-        location: "Whitefield, Bengaluru",
+        title: "Skyline Royal Penthouse — 4 BHK",
+        price: "₹3.45 Cr*",
+        specs: "4 BHK Sky Villa • 3,400 sq. ft. • DLF Phase 5",
+        location: "Golf Course Road, Gurugram",
         image: "/images/realestate/prop-2.jpg"
       },
       {
-        title: "The Courtyard Villa",
-        price: "₹2.45 Cr*",
-        specs: "4 BHK Villa • 2,850 sq. ft. • Ready to Move",
-        location: "Wakad, Pune",
+        title: "Urban Sanctuary — Independent Builder Floor",
+        price: "₹1.15 Cr*",
+        specs: "3 BHK Floor • 1,600 sq. ft. • Private Terrace & Lift",
+        location: "Dwarka Expressway / South Delhi",
         image: "/images/realestate/prop-3.jpg"
       },
       {
-        title: "Central Business Square",
-        price: "₹1.10 Cr*",
-        specs: "Commercial Office • 1,650 sq. ft. • Ready to Occupy",
-        location: "Hinjewadi, Pune",
+        title: "Apex Horizon — Commercial High-Street Shop",
+        price: "₹95 Lakh*",
+        specs: "Retail Space • 650 sq. ft. • Assured Rental Income",
+        location: "Noida Sector 150",
         image: "/images/realestate/prop-4.jpg"
       }
     ]
   },
 
   buyConfig: {
-    badge: "Looking to Buy?",
-    title: "Looking to Buy?",
-    description: "Tell us what you are looking for and our team can help you explore suitable property options based on location, budget and requirements.",
-    buttonText: "Find a Property",
+    badge: "Looking to Buy Your Dream Flat?",
+    title: "Let Tanuj Arora Find Your Ideal Address.",
+    description: "Share your location preferences and budget with us. We will arrange a personalized property walkthrough and negotiate the best deal for you.",
+    buttonText: "Request Property Callback",
     buttonHref: "#contact",
-    phoneCallText: "Residential • Commercial • New Projects • Resale"
+    phoneCallText: "Direct Line: +91 99117 86111 (Tanuj Arora)"
   },
 
   rentConfig: {
     badge: "Looking to Rent?",
-    title: "Find a Rental That Fits Your Lifestyle.",
-    description: "Browse 1 BHK, 2 BHK, 3 BHK, Furnished, Semi-Furnished, and Commercial options.",
-    buttonText: "Explore Rentals",
+    title: "Premium Furnished & Unfurnished Rental Apartments.",
+    description: "Browse curated 2 BHK, 3 BHK & Commercial Office Spaces available for immediate lease.",
+    buttonText: "Browse Available Rentals",
     buttonHref: "#contact",
-    phoneCallText: "Call for details: +91 98765 43210"
+    phoneCallText: "Call for quick availability: +91 99117 86111"
   },
 
   sellConfig: {
-    badge: "Looking to Sell?",
-    title: "Thinking About Selling Your Property?",
-    subtitle: "Get guidance on positioning your property, understanding local market conditions and connecting with potential buyers.",
+    badge: "Looking to Sell / List Property?",
+    title: "Want Maximum Value For Your Property?",
+    subtitle: "Get expert valuation, professional property showcase, and direct access to pre-qualified buyers.",
     steps: [
-      { number: "01", icon: "FileText", title: "Share Details", description: "Share property details with our team." },
-      { number: "02", icon: "Search", title: "Evaluation", description: "Property evaluation and market assessment." },
-      { number: "03", icon: "Megaphone", title: "Marketing", description: "Marketing & Enquiries handling." },
-      { number: "04", icon: "Eye", title: "Site Visits", description: "Coordinating potential buyer visits." },
-      { number: "05", icon: "CheckCircle", title: "Closing", description: "Negotiation & transaction closing support." }
+      { number: "01", icon: "FileText", title: "Share Property Details", description: "Call or WhatsApp Tanuj Arora (+91 99117 86111) with property info." },
+      { number: "02", icon: "Search", title: "Free Market Valuation", description: "Instant fair market assessment & price optimization." },
+      { number: "03", icon: "Megaphone", title: "Premium Marketing", description: "Targeted buyer outreach & HD photo/video showcase." },
+      { number: "04", icon: "Eye", title: "Vetted Site Visits", description: "Organized property walkthroughs with serious buyers only." },
+      { number: "05", icon: "CheckCircle", title: "Seamless Closing", description: "Full legal paperwork, token collection, and registration support." }
     ]
   },
 
   whyChooseUsConfig: {
-    badge: "WHY CHOOSE US",
-    title: "Why Choose Nestora",
-    subtitle: "Professional advisory and transparent property transactions.",
+    badge: "WHY CHOOSE FLATS & BEYOND",
+    title: "Why Buyers & Investors Trust Tanuj Arora",
+    subtitle: "Uncompromising integrity, deep market insights, and client-first commitment.",
     items: [
-      { id: 1, icon: "MapPin", title: "Local Market Knowledge", description: "Understand neighbourhoods, pricing patterns and property options." },
-      { id: 2, icon: "CheckSquare", title: "Curated Listings", description: "Focus on relevant properties based on client requirements." },
-      { id: 3, icon: "Shield", title: "Transparent Guidance", description: "Explain important property details and process steps clearly." },
-      { id: 4, icon: "Target", title: "Personalised Search", description: "Shortlist properties based on budget, location and lifestyle needs." },
-      { id: 5, icon: "Eye", title: "Site Visit Support", description: "Coordinate property visits where available." },
-      { id: 6, icon: "Briefcase", title: "End-to-End Assistance", description: "Support clients through enquiry, evaluation, negotiation and documentation coordination." }
+      { id: 1, icon: "MapPin", title: "Deep NCR Market Knowledge", description: "Inside access to upcoming infrastructure, RERA approvals, and growth hotspots." },
+      { id: 2, icon: "CheckSquare", title: "100% Legally Verified Listings", description: "Every flat title, land approval, and builder background is thoroughly audited." },
+      { id: 3, icon: "Shield", title: "Zero Hidden Brokerage Surprise", description: "Clear, upfront terms with complete transaction transparency." },
+      { id: 4, icon: "Target", title: "Bespoke Property Matching", description: "We match your budget, Vaastu preference, and commute needs accurately." },
+      { id: 5, icon: "Eye", title: "Free Luxury Cab Site Visits", description: "Complimentary pickup & drop for hassle-free family site visits." },
+      { id: 6, icon: "Briefcase", title: "End-to-End Loan & Registration", description: "Bank home loan sanctioning and registry support under one roof." }
     ]
   },
 
   areasConfig: {
-    badge: "AREAS WE SERVE",
-    title: "Explore Popular Locations",
-    subtitle: "Sample property markets across India.",
+    badge: "PRIME LOCATIONS WE COVER",
+    title: "Explore Premium Delhi NCR Zones",
+    subtitle: "Top growth corridors for living & investment.",
     items: [
-      { id: 1, title: "Pune", category: "Maharashtra", image: "/images/realestate/prop-5.jpg" },
-      { id: 2, title: "Mumbai", category: "Maharashtra", image: "/images/realestate/prop-6.jpg" },
-      { id: 3, title: "Bengaluru", category: "Karnataka", image: "/images/realestate/prop-1.jpg" },
-      { id: 4, title: "Delhi NCR", category: "North India", image: "/images/realestate/prop-2.jpg" }
+      { id: 1, title: "Golf Course Road", category: "Gurugram", image: "/images/realestate/prop-5.jpg" },
+      { id: 2, title: "Dwarka Expressway", category: "Gurugram / Delhi", image: "/images/realestate/prop-6.jpg" },
+      { id: 3, title: "Southern Peripheral Rd", category: "Gurugram", image: "/images/realestate/prop-1.jpg" },
+      { id: 4, title: "Noida Sector 150 & 62", category: "Noida", image: "/images/realestate/prop-2.jpg" }
     ]
   },
 
   advisorsConfig: {
-    badge: "OUR TEAM",
-    title: "Meet Our Property Advisors",
-    subtitle: "Experienced professionals guiding your property journey.",
+    badge: "LEADERSHIP & ADVISORY",
+    title: "Meet Your Lead Property Advisor",
+    subtitle: "Personalized guidance backed by a decade of real estate leadership.",
     items: [
-      { name: "Rohan Mehta", role: "Senior Property Advisor", specialty: "Residential Properties — Pune", bio: "10+ Years Experience. Focuses on finding the perfect residential match for families and professionals.", image: "/images/realestate/prop-3.jpg" },
-      { name: "Ananya Kapoor", role: "Property Consultant", specialty: "Premium Residential & Investment Properties", bio: "8+ Years Experience. Specializes in high-yield investments and luxury living spaces.", image: "/images/realestate/prop-4.jpg" },
-      { name: "Vivek Sharma", role: "Commercial Property Advisor", specialty: "Office & Retail Spaces", bio: "12+ Years Experience. Helps businesses find the right commercial spaces for growth.", image: "/images/realestate/prop-5.jpg" }
+      { name: "Tanuj Arora", role: "Founder & Managing Director", specialty: "Luxury Housing & Commercial Investments — Delhi NCR", bio: "10+ Years Experience. Founder of Flats & Beyond. Dedicated to bringing integrity, personalized care, and premium property solutions to homebuyers.", image: "/images/realestate/logo.jpg" },
+      { name: "Ananya Kapoor", role: "Senior Real Estate Consultant", specialty: "High-Rise Apartments & Penthouses", bio: "8+ Years Experience. Specializes in luxury residential developments and NRI investments.", image: "/images/realestate/prop-4.jpg" },
+      { name: "Vivek Sharma", role: "Commercial Advisory Lead", specialty: "Retail Shops & Office Spaces", bio: "12+ Years Experience. Helps business owners and investors secure high-return commercial assets.", image: "/images/realestate/prop-5.jpg" }
     ]
   },
 
   buyingJourneyConfig: {
-    badge: "PROCESS",
-    title: "From Search to Possession, With Clarity.",
-    subtitle: "Your property buying journey simplified.",
+    badge: "OUR 5-STEP PROCESS",
+    title: "From Dream to Key Handover",
+    subtitle: "A smooth, stress-free property buying experience.",
     steps: [
-      { number: "01", icon: "MessageSquare", title: "Tell Us Your Requirements", description: "Share location, budget, property type and preferences." },
-      { number: "02", icon: "List", title: "Shortlist Properties", description: "Review suitable options based on your requirements." },
-      { number: "03", icon: "Eye", title: "Schedule Site Visits", description: "Visit selected properties and evaluate them in person." },
-      { number: "04", icon: "PieChart", title: "Evaluate & Negotiate", description: "Compare options and discuss terms." },
-      { number: "05", icon: "CheckCircle", title: "Complete the Transaction", description: "Coordinate with relevant professionals for documentation and closing." }
+      { number: "01", icon: "MessageSquare", title: "Initial Consultation", description: "Connect with Tanuj Arora (+91 99117 86111) to discuss budget & location." },
+      { number: "02", icon: "List", title: "Handpicked Shortlist", description: "Receive 3-4 top verified flat options matching your criteria." },
+      { number: "03", icon: "Eye", title: "Guided Site Visits", description: "Visit sample flats and inspect layout, amenities, and connectivity." },
+      { number: "04", icon: "PieChart", title: "Best Price Negotiation", description: "We negotiate directly with top builders to get you the lowest deal." },
+      { number: "05", icon: "CheckCircle", title: "Loan & Possession", description: "Complete documentation, bank loan approval, and key handover." }
     ]
   },
 
   propertyAmenitiesConfig: {
-    badge: "AMENITIES",
-    title: "Common Property Features",
-    subtitle: "Modern amenities for comfortable living.",
+    badge: "WORLD-CLASS AMENITIES",
+    title: "Features Of Our Signature Flats",
+    subtitle: "Designed for modern luxury living.",
     items: [
-      { id: 1, icon: "Car", title: "Parking", description: "Dedicated parking spaces." },
-      { id: 2, icon: "Shield", title: "Security", description: "24/7 security and surveillance." },
-      { id: 3, icon: "ArrowUp", title: "Lift", description: "High-speed elevators." },
-      { id: 4, icon: "Zap", title: "Power Backup", description: "Uninterrupted power supply." },
-      { id: 5, icon: "Activity", title: "Gym", description: "Fully equipped fitness centers." },
-      { id: 6, icon: "Sun", title: "Garden / Balcony", description: "Open green spaces and private balconies." }
+      { id: 1, icon: "Car", title: "Covered Stilt Parking", description: "Reserved covered parking for residents & visitors." },
+      { id: 2, icon: "Shield", title: "3-Tier Gated Security", description: "24/7 CCTV surveillance, smart access & security guards." },
+      { id: 3, icon: "ArrowUp", title: "High-Speed Elevators", description: "Branded automatic lifts with ARD emergency power." },
+      { id: 4, icon: "Zap", title: "100% Power Backup", description: "Uninterrupted electricity for flats and common areas." },
+      { id: 5, icon: "Activity", title: "Modern Clubhouse & Gym", description: "Fully equipped fitness center, swimming pool & indoor games." },
+      { id: 6, icon: "Sun", title: "Landscaped Gardens", description: "Open green parks, jogging tracks, and kids play areas." }
     ]
   },
 
   galleryConfig: {
-    badge: "GALLERY",
-    title: "Explore Our Properties",
-    subtitle: "A glimpse into the properties we represent.",
+    badge: "PROJECT SHOWCASE",
+    title: "Inside Flats & Beyond Signature Spaces",
+    subtitle: "Take a visual tour of sample luxury flat interiors.",
     items: [
-      { id: 1, title: "Living Room", category: "Interior", image: "/images/realestate/prop-6.jpg" },
-      { id: 2, title: "Bedroom", category: "Interior", image: "/images/realestate/prop-1.jpg" },
-      { id: 3, title: "Kitchen", category: "Interior", image: "/images/realestate/prop-2.jpg" },
-      { id: 4, title: "Exterior", category: "Exterior", image: "/images/realestate/prop-3.jpg" },
-      { id: 5, title: "Clubhouse", category: "Amenities", image: "/images/realestate/prop-4.jpg" },
-      { id: 6, title: "Balcony View", category: "Exterior", image: "/images/realestate/prop-5.jpg" }
+      { id: 1, title: "Opulent Living Room", category: "Interior", image: "/images/realestate/prop-6.jpg" },
+      { id: 2, title: "Master Bedroom Suite", category: "Interior", image: "/images/realestate/prop-1.jpg" },
+      { id: 3, title: "Modular Italian Kitchen", category: "Interior", image: "/images/realestate/prop-2.jpg" },
+      { id: 4, title: "Modern Facade & High-Rise", category: "Exterior", image: "/images/realestate/prop-3.jpg" },
+      { id: 5, title: "Resort-Style Swimming Pool", category: "Amenities", image: "/images/realestate/prop-4.jpg" },
+      { id: 6, title: "Panoramic Sun Deck", category: "Exterior", image: "/images/realestate/prop-5.jpg" }
     ]
   },
 
   testimonialsConfig: {
-    badge: "SAMPLE REVIEWS",
-    title: "What Our Clients Say",
-    subtitle: "Demo testimonials showcasing client experiences.",
+    badge: "CLIENT REVIEWS",
+    title: "What Our Homebuyers Say About Flats & Beyond",
+    subtitle: "Real stories from families who found their dream address with Tanuj Arora.",
     items: [
-      { id: 1, name: "Amit Patel", role: "Sample Homebuyer", rating: 5, quote: "The team understood our location and budget requirements and helped us shortlist properties without wasting time.", avatar: "/images/realestate/about-main.jpg", verified: true, treatment: "Property Purchase" },
-      { id: 2, name: "Sneha Rao", role: "Sample Client", rating: 5, quote: "Communication was clear throughout the property search and site visit process.", avatar: "/images/realestate/about-main.jpg", verified: true, treatment: "Property Rental" }
+      { id: 1, name: "Rajesh & Meenakshi Malhotra", role: "3 BHK Flat Buyers in Gurugram", rating: 5, quote: "Tanuj Arora sir made our home buying process completely stress-free. From arranging luxury site visits to negotiating the best price with the builder, Flats & Beyond delivered 100% on their promise!", avatar: "/images/realestate/about-main.jpg", verified: true, treatment: "Gurugram 3 BHK Purchase" },
+      { id: 2, name: "Vikramaditya Singh", role: "Investor", rating: 5, quote: "I invested in a commercial retail shop on Dwarka Expressway through Tanuj. His market foresight and RERA documentation check were outstanding. High returns guaranteed!", avatar: "/images/realestate/about-main.jpg", verified: true, treatment: "Commercial Investment" }
     ]
   },
 
   faqConfig: {
-    badge: "FAQ",
-    title: "Frequently Asked Questions",
-    subtitle: "Common questions about buying, selling, and renting.",
+    badge: "FREQUENTLY ASKED QUESTIONS",
+    title: "Got Questions? We Have Answers.",
+    subtitle: "Clear answers to guide your flat buying decision.",
     items: [
-      { id: 1, category: "General", question: "How do I find a property through your agency?", answer: "Share your preferred location, budget and property requirements and the team can help identify suitable options." },
-      { id: 2, category: "Services", question: "Do you help with property site visits?", answer: "Site visits can be coordinated for available properties." },
-      { id: 3, category: "Services", question: "Do you help sell properties?", answer: "Yes, property owners can submit their details for an initial discussion." },
-      { id: 4, category: "Services", question: "Do you handle rental properties?", answer: "Rental support can be configured based on the markets and property types served." },
-      { id: 5, category: "General", question: "Can I list my property?", answer: "Yes, use the property listing enquiry form to share your property details." },
-      { id: 6, category: "Legal", question: "What documents are needed to buy a property?", answer: "Documentation varies by transaction and property type. Buyers should verify requirements with the relevant legal and professional advisors." },
-      { id: 7, category: "Services", question: "Do you provide property valuation?", answer: "Valuation support can be offered depending on the agency's services. Configure this feature accordingly." },
-      { id: 8, category: "General", question: "Do you guarantee property appreciation?", answer: "No. Property values can change based on market conditions, location and other factors." }
+      { id: 1, category: "General", question: "How do I schedule a site visit with Tanuj Arora?", answer: "You can call or WhatsApp us directly at +91 99117 86111. We will arrange a free AC cab pickup for you and your family." },
+      { id: 2, category: "Services", question: "Do you charge extra brokerage for new developer projects?", answer: "No! For new launch and under-construction builder projects, our advisory services to homebuyers are 100% free of charge." },
+      { id: 3, category: "Legal", question: "Are all properties listed with Flats & Beyond RERA approved?", answer: "Yes, 100%. We only showcase properties with verified land titles, RERA registration, and bank approvals." },
+      { id: 4, category: "Financial", question: "Do you assist with bank home loans?", answer: "Yes, we have tie-ups with leading banks (HDFC, ICICI, SBI, Axis) to get your home loan approved at competitive interest rates." },
+      { id: 5, category: "General", question: "Can I list my flat for resale or rental through Flats & Beyond?", answer: "Absolutely! Contact Tanuj Arora (+91 99117 86111) to get your property valued and listed for genuine buyers." }
     ]
   },
 
   enquiryCtaConfig: {
-    badge: "CONTACT US",
-    title: "Tell Us What You're Looking For",
-    description: "Share your property requirements, budget, or listing details and our advisors will connect with you.",
-    buttonText: "Submit Enquiry",
+    badge: "CONNECT WITH TANUJ ARORA",
+    title: "Ready To Find Your Dream Address?",
+    description: "Connect directly with Tanuj Arora (+91 99117 86111) for personalized property guidance and exclusive deals.",
+    buttonText: "Schedule Site Visit Now",
     buttonHref: "#contact",
-    phoneCallText: "WhatsApp Us: +91 98765 43210"
+    phoneCallText: "WhatsApp Direct: +91 99117 86111"
   },
 
   sections: [
