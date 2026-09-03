@@ -71,10 +71,10 @@ export const Hero = () => {
 
             {/* Bullet Highlights */}
             {hero.highlights && (
-              <div className="pt-6 border-t border-[var(--color-border,#e2e8f0)] flex flex-wrap items-center gap-6 text-sm font-medium text-[var(--color-text-primary)]">
+              <div className="pt-6 border-t border-[var(--color-border,#e2e8f0)] flex flex-col items-start gap-3 text-sm sm:text-base font-semibold text-[var(--color-text-primary)]">
                 {hero.highlights.map((highlight, idx) => (
-                  <div key={idx} className="flex items-center gap-2">
-                    <CheckCircle2 className="w-4 h-4 text-[var(--color-primary)] shrink-0" />
+                  <div key={idx} className="flex items-center gap-2.5">
+                    <CheckCircle2 className="w-4.5 h-4.5 text-[var(--color-primary)] shrink-0" />
                     <span>{highlight}</span>
                   </div>
                 ))}

@@ -65,6 +65,7 @@ export const realEstateConfig = {
     phone: "+91 99117 86111",
     email: "tanuj.arora@flatsandbeyond.in",
     whatsapp: "919911786111",
+    whatsappText: "Chat Directly on WhatsApp (+91 99117 86111)",
     whatsappMessage: "Hello Tanuj Arora Sir, I visited Flats & Beyond website and would like to enquire about luxury flats and property booking.",
     address: "Prime Commercial Towers, Golf Course Road, Gurugram & Delhi NCR",
     operatingHours: [
