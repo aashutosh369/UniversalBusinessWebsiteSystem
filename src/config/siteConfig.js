@@ -28,7 +28,7 @@ export const siteConfig = {
 
   // Feature Flags for global features
   features: {
-    enableThemeSwitcher: true,  // Display floating theme preset demo panel
+    enableThemeSwitcher: false, // Display floating theme preset demo panel
     enableWhatsAppButton: true, // Display direct quick float WhatsApp launcher
     enableBackToTop: true,
     enableModalPopups: true

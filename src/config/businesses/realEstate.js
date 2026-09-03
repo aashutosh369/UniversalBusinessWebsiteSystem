@@ -90,7 +90,7 @@ export const realEstateConfig = {
     ctaSecondary: { text: "Book Private Site Visit", href: "#contact", icon: "Calendar" },
     image: "/images/realestate/hero.jpg",
     highlights: ["Direct Founder Guidance: Tanuj Arora (+91 99117 86111)", "100% Verified Legal Titles & RERA Compliant", "End-to-End Home Loan & Deal Closure Support"],
-    searchEnabled: true,
+    searchEnabled: false,
     searchButtonText: "Find My Flat",
     searchFields: [
       { label: "Looking For", options: ["Buy Flat", "Rent / Lease", "Investment"] },

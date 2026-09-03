@@ -82,14 +82,16 @@ export const Navbar = () => {
           {/* Desktop Right CTA Bar */}
           <div className="hidden md:flex items-center gap-3 shrink-0">
             {/* Dark/Light Theme Toggle Button */}
-            <button
-              onClick={toggleDarkMode}
-              className="p-2.5 rounded-full bg-[var(--color-surface-card)] border border-[var(--color-border)] text-[var(--color-primary)] hover:scale-105 active:scale-95 transition-all duration-300 shadow-md"
-              title={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
-              aria-label="Toggle Theme Mode"
-            >
-              {isDarkMode ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-[var(--color-text-primary)]" />}
-            </button>
+            {siteConfig.features.enableThemeSwitcher && (
+              <button
+                onClick={toggleDarkMode}
+                className="p-2.5 rounded-full bg-[var(--color-surface-card)] border border-[var(--color-border)] text-[var(--color-primary)] hover:scale-105 active:scale-95 transition-all duration-300 shadow-md"
+                title={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+                aria-label="Toggle Theme Mode"
+              >
+                {isDarkMode ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-[var(--color-text-primary)]" />}
+              </button>
+            )}
 
             {/* Direct Phone Pill */}
             {businessConfig.contact?.phone && (
@@ -116,14 +118,16 @@ export const Navbar = () => {
 
           {/* Mobile Right Action Group */}
           <div className="flex items-center gap-2 lg:hidden">
-            <button
-              onClick={toggleDarkMode}
-              className="p-2 rounded-xl bg-[var(--color-surface-card)] border border-[var(--color-border)] text-[var(--color-primary)] hover:opacity-80 transition-colors"
-              title={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
-              aria-label="Toggle Theme Mode"
-            >
-              {isDarkMode ? <Sun className="w-5 h-5 text-amber-400" /> : <Moon className="w-5 h-5 text-[var(--color-text-primary)]" />}
-            </button>
+            {siteConfig.features.enableThemeSwitcher && (
+              <button
+                onClick={toggleDarkMode}
+                className="p-2 rounded-xl bg-[var(--color-surface-card)] border border-[var(--color-border)] text-[var(--color-primary)] hover:opacity-80 transition-colors"
+                title={isDarkMode ? "Switch to Light Mode" : "Switch to Dark Mode"}
+                aria-label="Toggle Theme Mode"
+              >
+                {isDarkMode ? <Sun className="w-5 h-5 text-amber-400" /> : <Moon className="w-5 h-5 text-[var(--color-text-primary)]" />}
+              </button>
+            )}
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
